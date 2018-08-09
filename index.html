@@ -11,12 +11,21 @@
   <div class="container">
     <div id="vis"></div>
     <div id="toolbar">
-      <a href="#" id="All" class="button active">All Patients</a>
-      <a href="#" id="Gender" class="button">Group by Gender</a>
-      <a href="#" id="Orientation" class="button">Group by Orientation</a>
-      <a href="#" id="MSM" class="button">Group by MSM</a>
-      <a href="#" id="IDU" class="button">Group by IDU</a>
-      <a href="#" id="PreP" class="button">Group by PreP</a>
+      Group By:
+      <a href="#" data-attr="group" data-field="None" class="button active">None</a>
+      <a href="#" data-attr="group" data-field="Gender" class="button">Gender</a>
+      <a href="#" data-attr="group" data-field="Orientation" class="button">Orientation</a>
+      <a href="#" data-attr="group" data-field="MSM" class="button">MSM</a>
+      <a href="#" data-attr="group" data-field="IDU" class="button">IDU</a>
+      <a href="#" data-attr="group" data-field="PreP" class="button">PreP</a>
+      <br />
+      Color By:
+      <a href="#" data-attr="color" data-field="None" class="button">None</a>
+      <a href="#" data-attr="color" data-field="Gender" class="button active">Gender</a>
+      <a href="#" data-attr="color" data-field="Orientation" class="button">Orientation</a>
+      <a href="#" data-attr="color" data-field="MSM" class="button">MSM</a>
+      <a href="#" data-attr="color" data-field="IDU" class="button">IDU</a>
+      <a href="#" data-attr="color" data-field="PreP" class="button">PreP</a>
     </div>
   </div>
 
@@ -1025,104 +1034,97 @@
   1000,Female,Other,0,0,0</script>
 
   <script>
-  var data;
+  var width = 940;
+  var height = 600;
+  var center = { x: width / 2, y: height / 2 };
 
-  function bubbleChart() {
-    var width = 940;
-    var height = 600;
+  var svg = d3.select('#vis')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
 
-    var center = { x: width / 2, y: height / 2 };
+  var data = d3.csvParse(d3.select('#fakeinfectedpatients').html());
 
-    var forceStrength = 0.03;
-    var svg = null;
-    var bubbles = null;
+  var bubbles = svg.selectAll('circle').data(data)
+    .enter().append('circle')
+      .attr('r', 5)
+      .attr('stroke', '#000000')
+      .attr('stroke-width', 2);
 
-    var simulation = d3.forceSimulation()
-      .velocityDecay(0.2)
-      .force('x', d3.forceX().strength(forceStrength).x(center.x))
-      .force('y', d3.forceY().strength(forceStrength).y(center.y))
-      .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
-      .on('tick', function(){
-        bubbles
-          .attr('cx', function(d){return d.x})
-          .attr('cy', function(d){return d.y});
-      });
+  var forceStrength = 0.03;
 
-    simulation.stop();
+  var simulation = d3.forceSimulation().nodes(data)
+    .velocityDecay(0.2)
+    .force('x', d3.forceX().strength(forceStrength).x(center.x))
+    .force('y', d3.forceY().strength(forceStrength).y(center.y))
+    .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
+    .on('tick', function(){
+      bubbles
+        .attr('cx', function(d){return d.x})
+        .attr('cy', function(d){return d.y});
+    });
 
-    var fillColor = {
-      'Male': '#0000ff',
-      'Female': '#992222'
-    };
-
-    var chart = function chart(selector, nodes){
-      nodes.forEach(function(d){
-        d.x = Math.random() * width;
-        d.y = Math.random() * height;
-      });
-
-      svg = d3.select(selector)
-        .append('svg')
-        .attr('width', width)
-        .attr('height', height);
-
-      // Bind nodes data to what will become DOM elements to represent them.
-      bubbles = svg.selectAll('.bubble').data(nodes, function(d){return d.id;});
-
-      var bubblesE = bubbles.enter().append('circle')
-        .classed('bubble', true)
-        .attr('r', 5)
-        .attr('fill', function(d){ return fillColor[d.Gender]; })
-        .attr('stroke', function(d){ return d3.rgb(fillColor[d.Gender]).darker() })
-        .attr('stroke-width', 2);
-
-      bubbles = bubbles.merge(bubblesE);
-      simulation.nodes(nodes);
-      chart.splitBubbles('All');
-    };
-
-    chart.splitBubbles = function(field){
-      if(field === 'All'){
-        svg.selectAll('.title').remove();
-        simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
-        simulation.alpha(1).restart();
-        return;
-      }
-      let values = [];
-      data.forEach(function(d){
-        if(values.indexOf(d[field]) == -1) values.push(d[field]);
-      });
-      let ratio = width/(values.length + 1);
-      let titles = svg.selectAll('.title').data(values);
-      titles.exit().remove();
-      titles.enter().append('text')
-        .attr('class', 'title')
-        .attr('y', 40)
-        .attr('text-anchor', 'middle')
-        .merge(titles)
-        .attr('x', function(d){ return ratio * values.indexOf(d) + ratio })
-        .text(function(d){ return d });
-      simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
-        return ratio * values.indexOf(d[field]) + ratio;
-      }));
+  function groupBubbles(field){
+    if(field === 'None'){
+      svg.selectAll('.title').remove();
+      simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
       simulation.alpha(1).restart();
-    };
-
-    return chart;
+      return;
+    }
+    var values = [];
+    data.forEach(function(d){
+      if(values.indexOf(d[field]) == -1) values.push(d[field]);
+    });
+    var ratio = width/(values.length + 1);
+    var titles = svg.selectAll('.title').data(values);
+    titles.exit().remove();
+    titles.enter().append('text')
+      .attr('class', 'title')
+      .attr('y', 40)
+      .attr('text-anchor', 'middle')
+      .merge(titles)
+      .transition()
+      .text(function(d){ return d })
+      .attr('x', function(d){ return ratio * values.indexOf(d) + ratio });
+    simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
+      return ratio * values.indexOf(d[field]) + ratio;
+    }));
+    simulation.alpha(1).restart();
   }
 
-  var myBubbleChart = bubbleChart();
+  groupBubbles('None');
 
-  data = d3.csvParse(d3.select('#fakeinfectedpatients').html());
-  myBubbleChart('#vis', data);
+  function colorBubbles(field){
+    if(field === 'None'){
+      bubbles.attr('fill', '#44ff44');
+      return;
+    }
+    var values = [];
+    data.forEach(function(d){
+      if(values.indexOf(d[field]) == -1) values.push(d[field]);
+    });
+    var fillColor = d3.scaleOrdinal()
+      .domain(values)
+      .range(d3.schemeCategory10.slice(0, values.length));
+    bubbles.attr('fill', function(d){
+      return fillColor(d[field])
+    });
+  }
+
+  colorBubbles('Gender');
 
   d3.select('#toolbar')
     .selectAll('.button')
     .on('click', function(){
-      d3.selectAll('.button').classed('active', false);
       var button = d3.select(d3.event.target);
+      var attr = button.attr('data-attr');
+      d3.selectAll('.button[data-attr="'+attr+'"]').classed('active', false);
       button.classed('active', true);
-      myBubbleChart.splitBubbles(button.attr('id'));
+      if(attr === 'group'){
+        groupBubbles(button.attr('data-field'));
+      } else {
+        colorBubbles(button.attr('data-field'));
+      }
     });
 </script>
 </body>
