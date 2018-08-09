@@ -1041,8 +1041,12 @@
       .velocityDecay(0.2)
       .force('x', d3.forceX().strength(forceStrength).x(center.x))
       .force('y', d3.forceY().strength(forceStrength).y(center.y))
-      .force('charge', d3.forceManyBody().strength(d => -50 * forceStrength))
-      .on('tick', d => bubbles.attr('cx', d => d.x).attr('cy', d => d.y));
+      .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
+      .on('tick', function(){
+        bubbles
+          .attr('cx', function(d){return d.x})
+          .attr('cy', function(d){return d.y});
+      });
 
     simulation.stop();
 
@@ -1052,7 +1056,7 @@
     };
 
     var chart = function chart(selector, nodes){
-      nodes.forEach(d => {
+      nodes.forEach(function(d){
         d.x = Math.random() * width;
         d.y = Math.random() * height;
       });
@@ -1063,13 +1067,13 @@
         .attr('height', height);
 
       // Bind nodes data to what will become DOM elements to represent them.
-      bubbles = svg.selectAll('.bubble').data(nodes, d => d.id);
+      bubbles = svg.selectAll('.bubble').data(nodes, function(d){return d.id;});
 
       var bubblesE = bubbles.enter().append('circle')
         .classed('bubble', true)
         .attr('r', 5)
-        .attr('fill', d => fillColor[d.Gender])
-        .attr('stroke', d => d3.rgb(fillColor[d.Gender]).darker())
+        .attr('fill', function(d){ return fillColor[d.Gender]; })
+        .attr('stroke', function(d){ return d3.rgb(fillColor[d.Gender]).darker() })
         .attr('stroke-width', 2);
 
       bubbles = bubbles.merge(bubblesE);
@@ -1085,7 +1089,9 @@
         return;
       }
       let values = [];
-      data.forEach(d => values.includes(d[field]) ? null : values.push(d[field]));
+      data.forEach(function(d){
+        if(values.indexOf(d[field]) == -1) values.push(d[field]);
+      });
       let ratio = width/(values.length + 1);
       let titles = svg.selectAll('.title').data(values);
       titles.exit().remove();
@@ -1094,9 +1100,9 @@
         .attr('y', 40)
         .attr('text-anchor', 'middle')
         .merge(titles)
-        .attr('x', d => ratio * values.indexOf(d) + ratio)
-        .text(d => d);
-      simulation.force('x', d3.forceX().strength(forceStrength).x(d => {
+        .attr('x', function(d){ return ratio * values.indexOf(d) + ratio })
+        .text(function(d){ return d });
+      simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
         return ratio * values.indexOf(d[field]) + ratio;
       }));
       simulation.alpha(1).restart();
@@ -1112,7 +1118,7 @@
 
   d3.select('#toolbar')
     .selectAll('.button')
-    .on('click', () => {
+    .on('click', function(){
       d3.selectAll('.button').classed('active', false);
       var button = d3.select(d3.event.target);
       button.classed('active', true);
