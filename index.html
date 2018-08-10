@@ -5,1037 +5,1047 @@
   <title>HIV Infection Groupings</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/bubble_chart.css">
+  <style>
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+  .button {
+    color: #444;
+    min-width: 130px;
+    padding: 4px 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+  }
+  .button.active {
+    background: #000;
+    color: #fff;
+  }
+  #vis {
+    width: 940px;
+    height: 550px;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  </style>
 </head>
 <body>
   <div class="container">
     <div id="vis"></div>
-    <div id="toolbar">
-      Group By:
-      <a href="#" data-attr="group" data-field="None" class="button active">None</a>
-      <a href="#" data-attr="group" data-field="Gender" class="button">Gender</a>
-      <a href="#" data-attr="group" data-field="Orientation" class="button">Orientation</a>
-      <a href="#" data-attr="group" data-field="MSM" class="button">MSM</a>
-      <a href="#" data-attr="group" data-field="IDU" class="button">IDU</a>
-      <a href="#" data-attr="group" data-field="PreP" class="button">PreP</a>
-      <br />
-      Color By:
-      <a href="#" data-attr="color" data-field="None" class="button">None</a>
-      <a href="#" data-attr="color" data-field="Gender" class="button active">Gender</a>
-      <a href="#" data-attr="color" data-field="Orientation" class="button">Orientation</a>
-      <a href="#" data-attr="color" data-field="MSM" class="button">MSM</a>
-      <a href="#" data-attr="color" data-field="IDU" class="button">IDU</a>
-      <a href="#" data-attr="color" data-field="PreP" class="button">PreP</a>
-    </div>
+    <div id="group-toolbar">Group By:</div>
+    <div id="color-toolbar">Color By:</div>
   </div>
 
   <script src="https://d3js.org/d3.v5.min.js"></script>
 
-  <script type="text/csv" id="fakeinfectedpatients">id,Gender,Orientation,IDU,PreP,MSM
-  1,Male,Other,0,1,1
-  2,Male,Other,1,1,1
-  3,Female,Bi,1,1,0
-  4,Female,Other,1,1,0
-  5,Male,Gay,0,0,1
-  6,Female,Striaght,0,0,0
-  7,Male,Striaght,1,0,0
-  8,Male,Other,1,1,1
-  9,Female,Gay,1,0,0
-  10,Male,Gay,0,0,1
-  11,Male,Other,0,0,1
-  12,Female,Striaght,1,0,0
-  13,Male,Striaght,1,1,0
-  14,Female,Bi,0,1,0
-  15,Male,Gay,0,1,1
-  16,Male,Gay,1,0,1
-  17,Female,Gay,0,1,0
-  18,Male,Gay,1,0,1
-  19,Female,Striaght,0,1,0
-  20,Male,Bi,0,0,1
-  21,Male,Bi,1,1,1
-  22,Female,Other,0,1,0
-  23,Female,Gay,0,0,0
-  24,Male,Other,1,0,1
-  25,Female,Bi,0,1,0
-  26,Male,Gay,0,0,1
-  27,Female,Bi,1,0,0
-  28,Male,Striaght,1,0,0
-  29,Female,Bi,1,1,0
-  30,Male,Bi,0,0,1
-  31,Male,Other,1,0,1
-  32,Female,Gay,0,0,0
-  33,Female,Gay,1,1,0
-  34,Female,Bi,1,0,0
-  35,Female,Bi,0,1,0
-  36,Male,Other,0,0,1
-  37,Male,Striaght,0,1,0
-  38,Male,Gay,0,0,1
-  39,Male,Gay,1,0,1
-  40,Male,Striaght,0,0,0
-  41,Female,Striaght,0,1,0
-  42,Male,Striaght,0,0,0
-  43,Female,Striaght,0,1,0
-  44,Female,Striaght,1,1,0
-  45,Male,Bi,1,0,1
-  46,Female,Bi,1,1,0
-  47,Female,Striaght,1,0,0
-  48,Male,Other,1,0,1
-  49,Male,Bi,0,1,1
-  50,Male,Striaght,0,0,0
-  51,Male,Bi,0,0,1
-  52,Female,Bi,0,1,0
-  53,Female,Gay,1,1,0
-  54,Male,Gay,0,1,1
-  55,Female,Striaght,1,0,0
-  56,Male,Striaght,1,1,0
-  57,Male,Striaght,0,1,0
-  58,Male,Gay,1,0,1
-  59,Female,Striaght,1,1,0
-  60,Female,Gay,1,1,0
-  61,Female,Gay,1,0,0
-  62,Male,Striaght,1,1,0
-  63,Male,Gay,0,1,1
-  64,Female,Bi,0,0,0
-  65,Female,Gay,0,0,0
-  66,Male,Other,0,0,1
-  67,Male,Other,1,0,1
-  68,Male,Striaght,0,1,0
-  69,Male,Striaght,1,1,0
-  70,Male,Bi,0,0,1
-  71,Male,Bi,0,1,1
-  72,Female,Bi,0,0,0
-  73,Female,Other,1,0,0
-  74,Female,Other,0,0,0
-  75,Male,Striaght,1,1,0
-  76,Male,Gay,1,1,1
-  77,Female,Other,0,1,0
-  78,Male,Bi,0,0,1
-  79,Male,Other,1,1,1
-  80,Female,Bi,1,0,0
-  81,Female,Other,1,1,0
-  82,Male,Striaght,0,0,0
-  83,Female,Striaght,0,1,0
-  84,Male,Striaght,1,1,0
-  85,Male,Striaght,0,0,0
-  86,Male,Gay,1,0,1
-  87,Male,Bi,0,1,1
-  88,Male,Striaght,0,1,0
-  89,Female,Bi,1,1,0
-  90,Female,Striaght,0,0,0
-  91,Male,Other,0,0,1
-  92,Male,Striaght,0,0,0
-  93,Female,Striaght,0,0,0
-  94,Male,Other,1,0,1
-  95,Male,Bi,1,0,1
-  96,Male,Gay,0,0,1
-  97,Female,Striaght,0,1,0
-  98,Male,Bi,0,1,1
-  99,Female,Bi,1,0,0
-  100,Male,Other,0,0,1
-  101,Male,Striaght,0,0,0
-  102,Male,Bi,0,0,1
-  103,Female,Striaght,0,0,0
-  104,Male,Striaght,1,0,0
-  105,Male,Other,0,1,1
-  106,Female,Bi,0,1,0
-  107,Male,Other,0,0,1
-  108,Female,Gay,0,1,0
-  109,Male,Other,0,0,1
-  110,Female,Gay,1,0,0
-  111,Male,Striaght,0,0,0
-  112,Female,Striaght,0,0,0
-  113,Male,Gay,1,1,1
-  114,Male,Striaght,1,1,0
-  115,Female,Striaght,1,0,0
-  116,Male,Other,0,1,1
-  117,Female,Other,1,1,0
-  118,Male,Striaght,1,0,0
-  119,Female,Bi,1,1,0
-  120,Female,Striaght,1,1,0
-  121,Male,Gay,1,1,1
-  122,Male,Bi,0,1,1
-  123,Female,Other,0,0,0
-  124,Male,Gay,0,1,1
-  125,Male,Bi,0,0,1
-  126,Male,Striaght,0,0,0
-  127,Male,Bi,0,1,1
-  128,Female,Other,0,1,0
-  129,Female,Gay,1,0,0
-  130,Female,Striaght,1,1,0
-  131,Female,Other,1,1,0
-  132,Female,Other,0,0,0
-  133,Female,Other,1,0,0
-  134,Male,Gay,0,1,1
-  135,Male,Striaght,1,0,0
-  136,Female,Other,1,1,0
-  137,Male,Gay,0,1,1
-  138,Male,Gay,0,0,1
-  139,Male,Striaght,0,1,0
-  140,Male,Gay,0,1,1
-  141,Male,Other,0,1,1
-  142,Female,Gay,0,0,0
-  143,Male,Bi,1,0,1
-  144,Male,Striaght,1,0,0
-  145,Male,Other,0,1,1
-  146,Female,Gay,1,0,0
-  147,Male,Other,1,0,1
-  148,Female,Gay,0,1,0
-  149,Female,Gay,0,1,0
-  150,Male,Striaght,1,0,0
-  151,Male,Bi,1,0,1
-  152,Female,Striaght,0,0,0
-  153,Male,Other,1,0,1
-  154,Male,Other,0,0,1
-  155,Female,Striaght,0,1,0
-  156,Male,Striaght,0,0,0
-  157,Female,Other,0,1,0
-  158,Male,Striaght,1,0,0
-  159,Male,Striaght,1,1,0
-  160,Female,Gay,1,0,0
-  161,Male,Gay,0,0,1
-  162,Female,Gay,0,1,0
-  163,Female,Other,0,0,0
-  164,Female,Other,0,1,0
-  165,Female,Gay,0,0,0
-  166,Male,Striaght,0,0,0
-  167,Male,Gay,0,1,1
-  168,Male,Other,1,1,1
-  169,Female,Gay,1,1,0
-  170,Male,Bi,0,0,1
-  171,Female,Bi,0,0,0
-  172,Male,Other,0,0,1
-  173,Male,Striaght,1,0,0
-  174,Male,Bi,0,1,1
-  175,Female,Other,1,0,0
-  176,Female,Bi,1,1,0
-  177,Female,Bi,0,0,0
-  178,Female,Other,0,1,0
-  179,Male,Gay,0,1,1
-  180,Female,Striaght,1,0,0
-  181,Male,Gay,0,0,1
-  182,Female,Other,1,1,0
-  183,Female,Striaght,0,1,0
-  184,Female,Other,0,1,0
-  185,Male,Other,0,1,1
-  186,Female,Striaght,0,1,0
-  187,Male,Gay,1,1,1
-  188,Female,Other,0,0,0
-  189,Female,Gay,1,1,0
-  190,Female,Bi,0,1,0
-  191,Female,Gay,0,0,0
-  192,Male,Gay,0,0,1
-  193,Male,Striaght,1,1,0
-  194,Male,Gay,0,0,1
-  195,Female,Other,0,0,0
-  196,Male,Bi,1,1,1
-  197,Female,Other,0,0,0
-  198,Female,Gay,0,0,0
-  199,Female,Other,1,1,0
-  200,Female,Other,1,1,0
-  201,Male,Striaght,0,0,0
-  202,Male,Striaght,0,1,0
-  203,Male,Gay,0,1,1
-  204,Female,Bi,1,1,0
-  205,Female,Gay,1,0,0
-  206,Female,Bi,0,0,0
-  207,Female,Striaght,0,1,0
-  208,Female,Bi,1,0,0
-  209,Female,Bi,0,0,0
-  210,Female,Gay,1,0,0
-  211,Female,Bi,0,0,0
-  212,Female,Other,0,0,0
-  213,Male,Bi,0,0,1
-  214,Male,Other,1,0,1
-  215,Female,Striaght,0,0,0
-  216,Male,Bi,1,1,1
-  217,Male,Striaght,0,1,0
-  218,Male,Striaght,1,1,0
-  219,Female,Bi,0,0,0
-  220,Female,Gay,0,1,0
-  221,Female,Gay,0,1,0
-  222,Female,Bi,0,1,0
-  223,Female,Other,1,1,0
-  224,Female,Bi,0,0,0
-  225,Female,Other,1,0,0
-  226,Male,Gay,1,0,1
-  227,Male,Bi,0,0,1
-  228,Male,Gay,1,0,1
-  229,Female,Bi,0,1,0
-  230,Male,Other,0,0,1
-  231,Male,Other,1,1,1
-  232,Male,Striaght,0,0,0
-  233,Female,Gay,0,1,0
-  234,Female,Gay,1,0,0
-  235,Female,Gay,0,0,0
-  236,Female,Striaght,0,1,0
-  237,Male,Gay,0,0,1
-  238,Male,Other,1,0,1
-  239,Male,Other,0,1,1
-  240,Male,Bi,0,1,1
-  241,Male,Bi,0,0,1
-  242,Male,Other,1,1,1
-  243,Female,Bi,1,0,0
-  244,Male,Gay,0,1,1
-  245,Male,Striaght,0,1,0
-  246,Female,Gay,1,0,0
-  247,Female,Gay,0,1,0
-  248,Male,Bi,1,0,1
-  249,Female,Gay,0,0,0
-  250,Female,Striaght,1,1,0
-  251,Female,Other,1,0,0
-  252,Male,Bi,0,1,1
-  253,Male,Bi,0,0,1
-  254,Female,Bi,1,0,0
-  255,Female,Bi,0,1,0
-  256,Male,Bi,0,1,1
-  257,Female,Bi,1,0,0
-  258,Male,Bi,0,1,1
-  259,Female,Gay,0,1,0
-  260,Female,Striaght,0,1,0
-  261,Female,Bi,1,0,0
-  262,Male,Other,0,1,1
-  263,Male,Gay,1,1,1
-  264,Male,Bi,0,0,1
-  265,Female,Striaght,1,0,0
-  266,Male,Other,0,1,1
-  267,Male,Bi,0,0,1
-  268,Male,Striaght,1,1,0
-  269,Female,Other,1,1,0
-  270,Female,Other,0,0,0
-  271,Male,Other,1,1,1
-  272,Female,Gay,0,0,0
-  273,Female,Striaght,1,0,0
-  274,Female,Bi,0,0,0
-  275,Male,Striaght,1,1,0
-  276,Male,Bi,0,1,1
-  277,Male,Striaght,0,0,0
-  278,Male,Striaght,1,1,0
-  279,Male,Bi,1,1,1
-  280,Male,Gay,0,0,1
-  281,Female,Other,1,0,0
-  282,Female,Bi,1,0,0
-  283,Male,Other,1,1,1
-  284,Male,Gay,1,0,1
-  285,Female,Striaght,0,1,0
-  286,Female,Bi,1,1,0
-  287,Female,Bi,1,0,0
-  288,Female,Other,1,0,0
-  289,Female,Other,0,1,0
-  290,Female,Striaght,1,0,0
-  291,Male,Other,1,1,1
-  292,Male,Striaght,0,0,0
-  293,Male,Gay,1,1,1
-  294,Male,Other,0,0,1
-  295,Male,Other,0,1,1
-  296,Male,Gay,1,1,1
-  297,Male,Striaght,1,0,0
-  298,Female,Bi,1,0,0
-  299,Male,Gay,0,0,1
-  300,Male,Striaght,1,1,0
-  301,Male,Other,1,1,1
-  302,Male,Other,0,1,1
-  303,Female,Bi,1,1,0
-  304,Female,Bi,1,0,0
-  305,Male,Other,1,0,1
-  306,Female,Bi,0,0,0
-  307,Female,Striaght,0,1,0
-  308,Female,Striaght,1,1,0
-  309,Female,Other,1,0,0
-  310,Female,Bi,0,1,0
-  311,Male,Striaght,1,1,0
-  312,Female,Bi,1,0,0
-  313,Male,Striaght,1,0,0
-  314,Male,Other,1,1,1
-  315,Female,Bi,0,1,0
-  316,Female,Bi,0,0,0
-  317,Female,Other,0,1,0
-  318,Female,Striaght,1,0,0
-  319,Male,Gay,0,0,1
-  320,Male,Gay,1,1,1
-  321,Male,Bi,0,0,1
-  322,Male,Other,1,1,1
-  323,Male,Other,1,0,1
-  324,Female,Gay,1,0,0
-  325,Female,Gay,1,0,0
-  326,Female,Striaght,1,0,0
-  327,Male,Bi,1,0,1
-  328,Female,Bi,0,0,0
-  329,Male,Other,1,1,1
-  330,Male,Gay,0,1,1
-  331,Female,Bi,1,0,0
-  332,Female,Other,1,1,0
-  333,Female,Other,1,0,0
-  334,Female,Gay,1,0,0
-  335,Female,Other,1,1,0
-  336,Male,Striaght,0,1,0
-  337,Male,Gay,1,1,1
-  338,Female,Striaght,1,0,0
-  339,Female,Other,0,0,0
-  340,Female,Striaght,1,1,0
-  341,Male,Other,1,0,1
-  342,Male,Gay,0,0,1
-  343,Female,Bi,0,1,0
-  344,Male,Striaght,1,1,0
-  345,Male,Striaght,1,0,0
-  346,Female,Other,1,0,0
-  347,Female,Other,0,0,0
-  348,Male,Other,1,1,1
-  349,Male,Gay,1,1,1
-  350,Male,Other,0,1,1
-  351,Female,Bi,0,1,0
-  352,Male,Bi,0,0,1
-  353,Male,Bi,0,1,1
-  354,Female,Striaght,1,0,0
-  355,Male,Striaght,0,1,0
-  356,Male,Striaght,1,0,0
-  357,Female,Striaght,1,0,0
-  358,Male,Striaght,1,0,0
-  359,Male,Striaght,1,0,0
-  360,Female,Bi,1,1,0
-  361,Male,Striaght,1,1,0
-  362,Male,Bi,0,0,1
-  363,Male,Other,1,0,1
-  364,Female,Striaght,0,0,0
-  365,Male,Gay,1,0,1
-  366,Female,Other,0,0,0
-  367,Female,Other,0,1,0
-  368,Male,Bi,1,0,1
-  369,Male,Other,0,0,1
-  370,Female,Striaght,1,1,0
-  371,Female,Bi,1,0,0
-  372,Female,Gay,1,0,0
-  373,Male,Striaght,1,0,0
-  374,Male,Other,1,1,1
-  375,Female,Other,1,1,0
-  376,Male,Other,1,0,1
-  377,Male,Bi,1,0,1
-  378,Female,Other,0,1,0
-  379,Female,Other,0,1,0
-  380,Female,Gay,1,1,0
-  381,Female,Gay,0,0,0
-  382,Male,Striaght,0,0,0
-  383,Male,Bi,1,0,1
-  384,Female,Other,1,0,0
-  385,Male,Gay,0,0,1
-  386,Female,Gay,1,1,0
-  387,Male,Bi,0,0,1
-  388,Male,Striaght,1,0,0
-  389,Male,Striaght,1,1,0
-  390,Male,Bi,1,1,1
-  391,Male,Other,1,0,1
-  392,Male,Gay,0,0,1
-  393,Female,Other,0,0,0
-  394,Male,Gay,1,1,1
-  395,Female,Gay,0,1,0
-  396,Male,Striaght,0,1,0
-  397,Male,Bi,1,1,1
-  398,Female,Bi,1,1,0
-  399,Female,Bi,1,1,0
-  400,Female,Other,1,1,0
-  401,Female,Other,0,0,0
-  402,Male,Gay,0,1,1
-  403,Male,Other,1,0,1
-  404,Male,Other,0,1,1
-  405,Female,Other,1,0,0
-  406,Female,Gay,0,1,0
-  407,Female,Bi,1,1,0
-  408,Female,Other,0,0,0
-  409,Male,Bi,1,1,1
-  410,Male,Bi,1,1,1
-  411,Male,Other,1,0,1
-  412,Male,Other,0,0,1
-  413,Female,Gay,0,1,0
-  414,Female,Bi,1,1,0
-  415,Female,Other,1,0,0
-  416,Female,Striaght,1,0,0
-  417,Female,Other,1,0,0
-  418,Female,Gay,0,1,0
-  419,Male,Other,1,0,1
-  420,Male,Bi,0,1,1
-  421,Male,Bi,1,1,1
-  422,Male,Bi,0,0,1
-  423,Female,Striaght,0,1,0
-  424,Male,Gay,0,0,1
-  425,Male,Other,0,1,1
-  426,Female,Other,0,0,0
-  427,Female,Striaght,0,0,0
-  428,Male,Other,1,0,1
-  429,Female,Bi,1,0,0
-  430,Male,Other,1,1,1
-  431,Male,Bi,0,1,1
-  432,Female,Bi,1,1,0
-  433,Female,Gay,1,0,0
-  434,Female,Bi,1,0,0
-  435,Female,Striaght,0,0,0
-  436,Female,Striaght,0,0,0
-  437,Female,Striaght,1,0,0
-  438,Female,Bi,0,1,0
-  439,Male,Gay,1,0,1
-  440,Female,Gay,0,1,0
-  441,Male,Striaght,1,0,0
-  442,Female,Striaght,0,0,0
-  443,Female,Other,0,0,0
-  444,Female,Gay,1,0,0
-  445,Female,Gay,0,1,0
-  446,Female,Bi,1,1,0
-  447,Female,Gay,1,0,0
-  448,Female,Gay,1,1,0
-  449,Female,Striaght,0,1,0
-  450,Female,Bi,1,0,0
-  451,Male,Other,1,0,1
-  452,Female,Striaght,0,1,0
-  453,Female,Gay,0,0,0
-  454,Female,Other,0,0,0
-  455,Female,Gay,0,0,0
-  456,Male,Gay,1,0,1
-  457,Male,Bi,1,1,1
-  458,Male,Gay,0,0,1
-  459,Male,Gay,0,1,1
-  460,Female,Gay,0,1,0
-  461,Male,Other,1,0,1
-  462,Male,Bi,1,1,1
-  463,Male,Bi,1,0,1
-  464,Male,Striaght,0,0,0
-  465,Male,Striaght,1,0,0
-  466,Male,Bi,0,0,1
-  467,Female,Gay,0,0,0
-  468,Female,Striaght,0,0,0
-  469,Male,Other,1,0,1
-  470,Male,Other,1,0,1
-  471,Female,Other,0,0,0
-  472,Male,Other,1,0,1
-  473,Male,Gay,1,1,1
-  474,Female,Bi,1,1,0
-  475,Female,Gay,1,0,0
-  476,Female,Bi,0,1,0
-  477,Female,Gay,0,0,0
-  478,Male,Other,1,0,1
-  479,Male,Bi,1,0,1
-  480,Male,Bi,0,1,1
-  481,Male,Bi,1,0,1
-  482,Male,Gay,1,0,1
-  483,Male,Striaght,1,1,0
-  484,Female,Bi,1,0,0
-  485,Female,Gay,1,0,0
-  486,Male,Gay,1,0,1
-  487,Male,Other,1,0,1
-  488,Female,Bi,0,0,0
-  489,Female,Bi,1,1,0
-  490,Male,Bi,1,1,1
-  491,Male,Bi,0,0,1
-  492,Male,Bi,0,0,1
-  493,Male,Other,1,1,1
-  494,Female,Other,0,1,0
-  495,Male,Bi,1,1,1
-  496,Male,Bi,1,0,1
-  497,Female,Gay,1,1,0
-  498,Female,Striaght,0,0,0
-  499,Male,Gay,0,0,1
-  500,Male,Other,0,0,1
-  501,Male,Striaght,0,1,0
-  502,Male,Gay,1,1,1
-  503,Female,Striaght,1,0,0
-  504,Female,Bi,1,1,0
-  505,Female,Other,1,1,0
-  506,Male,Striaght,0,0,0
-  507,Female,Other,0,1,0
-  508,Male,Other,0,0,1
-  509,Female,Gay,1,0,0
-  510,Male,Bi,1,1,1
-  511,Female,Striaght,0,1,0
-  512,Female,Gay,0,0,0
-  513,Female,Striaght,0,1,0
-  514,Male,Bi,1,1,1
-  515,Male,Gay,0,0,1
-  516,Female,Bi,0,1,0
-  517,Male,Gay,0,0,1
-  518,Female,Bi,1,0,0
-  519,Male,Other,0,0,1
-  520,Female,Other,0,1,0
-  521,Female,Bi,1,1,0
-  522,Female,Other,0,1,0
-  523,Female,Bi,0,0,0
-  524,Female,Gay,1,1,0
-  525,Female,Other,0,0,0
-  526,Female,Striaght,1,0,0
-  527,Female,Other,1,1,0
-  528,Female,Striaght,1,0,0
-  529,Female,Bi,0,1,0
-  530,Female,Other,1,0,0
-  531,Female,Bi,0,1,0
-  532,Female,Striaght,1,0,0
-  533,Female,Gay,1,0,0
-  534,Male,Other,1,0,1
-  535,Male,Bi,1,1,1
-  536,Male,Gay,0,1,1
-  537,Female,Other,0,1,0
-  538,Female,Gay,0,1,0
-  539,Female,Other,0,1,0
-  540,Female,Other,0,1,0
-  541,Female,Striaght,0,0,0
-  542,Male,Bi,0,1,1
-  543,Male,Bi,0,0,1
-  544,Female,Striaght,0,0,0
-  545,Male,Striaght,1,0,0
-  546,Male,Other,0,0,1
-  547,Male,Other,1,1,1
-  548,Male,Other,1,1,1
-  549,Male,Striaght,0,1,0
-  550,Female,Gay,1,1,0
-  551,Male,Gay,0,0,1
-  552,Female,Bi,0,0,0
-  553,Male,Gay,1,1,1
-  554,Male,Striaght,0,1,0
-  555,Female,Other,1,0,0
-  556,Female,Gay,1,1,0
-  557,Male,Gay,0,1,1
-  558,Female,Bi,0,1,0
-  559,Male,Striaght,1,0,0
-  560,Female,Gay,1,1,0
-  561,Female,Bi,1,1,0
-  562,Female,Striaght,0,0,0
-  563,Female,Gay,1,1,0
-  564,Female,Striaght,0,1,0
-  565,Female,Gay,1,0,0
-  566,Male,Bi,0,0,1
-  567,Female,Striaght,0,1,0
-  568,Male,Striaght,1,1,0
-  569,Female,Bi,1,1,0
-  570,Female,Gay,0,0,0
-  571,Female,Striaght,1,1,0
-  572,Female,Gay,0,0,0
-  573,Female,Striaght,0,0,0
-  574,Male,Striaght,1,1,0
-  575,Male,Striaght,1,1,0
-  576,Male,Gay,1,0,1
-  577,Male,Gay,0,1,1
-  578,Male,Other,0,0,1
-  579,Male,Gay,0,0,1
-  580,Female,Bi,1,1,0
-  581,Female,Striaght,0,1,0
-  582,Female,Bi,0,1,0
-  583,Male,Bi,0,1,1
-  584,Male,Gay,0,0,1
-  585,Male,Bi,0,0,1
-  586,Male,Bi,1,0,1
-  587,Male,Striaght,0,1,0
-  588,Female,Bi,0,0,0
-  589,Female,Gay,0,0,0
-  590,Male,Other,1,0,1
-  591,Male,Striaght,0,0,0
-  592,Female,Bi,1,1,0
-  593,Female,Other,1,0,0
-  594,Female,Bi,0,1,0
-  595,Male,Striaght,0,0,0
-  596,Female,Gay,0,0,0
-  597,Male,Striaght,0,1,0
-  598,Female,Other,1,0,0
-  599,Male,Bi,1,0,1
-  600,Male,Gay,0,0,1
-  601,Male,Other,0,1,1
-  602,Male,Bi,0,0,1
-  603,Male,Striaght,1,0,0
-  604,Female,Other,1,1,0
-  605,Female,Other,0,1,0
-  606,Female,Striaght,0,0,0
-  607,Male,Gay,1,1,1
-  608,Female,Gay,1,0,0
-  609,Male,Gay,0,0,1
-  610,Male,Other,1,0,1
-  611,Male,Bi,0,0,1
-  612,Female,Striaght,1,1,0
-  613,Male,Other,0,0,1
-  614,Male,Gay,1,0,1
-  615,Male,Striaght,0,1,0
-  616,Male,Other,0,1,1
-  617,Male,Gay,0,1,1
-  618,Male,Other,0,1,1
-  619,Male,Other,1,1,1
-  620,Female,Striaght,0,0,0
-  621,Female,Gay,1,0,0
-  622,Female,Striaght,1,1,0
-  623,Male,Other,0,1,1
-  624,Female,Other,0,1,0
-  625,Female,Striaght,1,0,0
-  626,Female,Bi,0,1,0
-  627,Female,Other,0,0,0
-  628,Male,Striaght,0,1,0
-  629,Male,Bi,1,1,1
-  630,Male,Other,0,1,1
-  631,Female,Bi,1,1,0
-  632,Female,Bi,1,0,0
-  633,Female,Other,1,1,0
-  634,Male,Other,0,0,1
-  635,Male,Bi,0,0,1
-  636,Female,Striaght,1,0,0
-  637,Male,Striaght,1,0,0
-  638,Female,Bi,0,0,0
-  639,Male,Bi,1,0,1
-  640,Female,Gay,0,1,0
-  641,Female,Gay,1,0,0
-  642,Male,Bi,1,0,1
-  643,Female,Gay,1,0,0
-  644,Male,Gay,1,1,1
-  645,Male,Striaght,0,1,0
-  646,Male,Striaght,1,1,0
-  647,Female,Gay,1,1,0
-  648,Female,Striaght,1,1,0
-  649,Female,Other,0,0,0
-  650,Female,Bi,0,0,0
-  651,Male,Other,0,0,1
-  652,Male,Bi,1,1,1
-  653,Female,Gay,1,1,0
-  654,Male,Bi,1,0,1
-  655,Male,Other,0,0,1
-  656,Female,Gay,0,1,0
-  657,Male,Gay,1,1,1
-  658,Male,Bi,1,0,1
-  659,Male,Other,1,1,1
-  660,Female,Striaght,1,1,0
-  661,Male,Bi,1,1,1
-  662,Female,Striaght,1,1,0
-  663,Male,Other,1,1,1
-  664,Male,Other,1,1,1
-  665,Male,Striaght,0,1,0
-  666,Male,Striaght,0,1,0
-  667,Female,Striaght,0,1,0
-  668,Female,Gay,1,1,0
-  669,Female,Other,1,1,0
-  670,Female,Other,1,1,0
-  671,Male,Other,0,0,1
-  672,Female,Bi,1,0,0
-  673,Female,Bi,0,0,0
-  674,Male,Striaght,1,0,0
-  675,Female,Other,1,1,0
-  676,Female,Other,0,1,0
-  677,Male,Striaght,1,1,0
-  678,Male,Other,1,0,1
-  679,Male,Striaght,0,1,0
-  680,Male,Bi,0,0,1
-  681,Female,Other,0,0,0
-  682,Female,Striaght,0,1,0
-  683,Female,Bi,0,0,0
-  684,Male,Striaght,1,0,0
-  685,Male,Other,0,1,1
-  686,Male,Bi,1,0,1
-  687,Female,Other,0,0,0
-  688,Female,Gay,0,1,0
-  689,Male,Bi,1,0,1
-  690,Female,Striaght,1,0,0
-  691,Male,Other,0,1,1
-  692,Male,Gay,1,1,1
-  693,Male,Gay,1,1,1
-  694,Female,Other,1,0,0
-  695,Male,Striaght,1,1,0
-  696,Female,Other,0,0,0
-  697,Female,Other,0,1,0
-  698,Male,Gay,1,1,1
-  699,Male,Bi,0,1,1
-  700,Male,Striaght,0,0,0
-  701,Female,Striaght,0,0,0
-  702,Male,Other,1,1,1
-  703,Female,Other,1,1,0
-  704,Male,Bi,0,0,1
-  705,Female,Bi,1,1,0
-  706,Female,Other,1,0,0
-  707,Female,Bi,0,1,0
-  708,Female,Other,0,0,0
-  709,Female,Striaght,0,0,0
-  710,Male,Gay,1,1,1
-  711,Female,Gay,0,1,0
-  712,Female,Gay,0,1,0
-  713,Female,Striaght,1,0,0
-  714,Female,Bi,1,0,0
-  715,Male,Gay,1,0,1
-  716,Female,Bi,1,0,0
-  717,Male,Striaght,1,1,0
-  718,Female,Bi,0,0,0
-  719,Male,Bi,0,0,1
-  720,Male,Gay,1,1,1
-  721,Female,Gay,1,0,0
-  722,Female,Other,0,1,0
-  723,Female,Bi,1,0,0
-  724,Female,Striaght,1,0,0
-  725,Female,Striaght,1,0,0
-  726,Male,Gay,1,0,1
-  727,Male,Gay,0,1,1
-  728,Female,Striaght,0,1,0
-  729,Male,Striaght,0,1,0
-  730,Female,Striaght,1,0,0
-  731,Male,Gay,0,0,1
-  732,Female,Gay,0,1,0
-  733,Female,Other,1,1,0
-  734,Female,Other,0,1,0
-  735,Female,Other,1,0,0
-  736,Female,Striaght,0,1,0
-  737,Male,Striaght,1,0,0
-  738,Male,Bi,1,1,1
-  739,Female,Striaght,1,0,0
-  740,Female,Striaght,0,1,0
-  741,Female,Other,0,0,0
-  742,Female,Other,1,1,0
-  743,Female,Gay,0,1,0
-  744,Male,Gay,0,0,1
-  745,Female,Gay,1,1,0
-  746,Female,Other,1,0,0
-  747,Female,Gay,1,0,0
-  748,Male,Bi,1,1,1
-  749,Male,Gay,0,1,1
-  750,Female,Gay,0,1,0
-  751,Female,Striaght,0,0,0
-  752,Male,Striaght,0,1,0
-  753,Male,Bi,0,1,1
-  754,Female,Striaght,1,0,0
-  755,Female,Bi,0,1,0
-  756,Male,Bi,1,0,1
-  757,Male,Gay,0,1,1
-  758,Female,Other,0,0,0
-  759,Male,Bi,0,1,1
-  760,Male,Bi,1,1,1
-  761,Male,Other,0,0,1
-  762,Female,Other,1,0,0
-  763,Female,Bi,1,0,0
-  764,Male,Bi,1,0,1
-  765,Female,Other,1,1,0
-  766,Female,Other,0,1,0
-  767,Male,Gay,0,0,1
-  768,Male,Bi,0,0,1
-  769,Female,Other,1,1,0
-  770,Female,Bi,1,0,0
-  771,Male,Bi,0,1,1
-  772,Female,Bi,1,1,0
-  773,Female,Other,0,0,0
-  774,Female,Bi,0,1,0
-  775,Female,Striaght,1,1,0
-  776,Male,Striaght,1,1,0
-  777,Male,Gay,1,1,1
-  778,Female,Bi,0,0,0
-  779,Male,Other,0,1,1
-  780,Female,Gay,1,1,0
-  781,Female,Striaght,0,0,0
-  782,Male,Other,0,0,1
-  783,Female,Bi,1,1,0
-  784,Male,Other,1,1,1
-  785,Male,Gay,0,1,1
-  786,Male,Other,1,0,1
-  787,Male,Other,1,0,1
-  788,Female,Striaght,0,1,0
-  789,Female,Other,0,0,0
-  790,Male,Other,0,0,1
-  791,Male,Striaght,0,0,0
-  792,Male,Other,0,0,1
-  793,Female,Other,1,0,0
-  794,Male,Striaght,1,0,0
-  795,Female,Striaght,0,1,0
-  796,Male,Other,1,0,1
-  797,Male,Bi,1,1,1
-  798,Male,Striaght,1,1,0
-  799,Male,Striaght,0,0,0
-  800,Male,Gay,1,1,1
-  801,Male,Other,0,1,1
-  802,Female,Other,1,1,0
-  803,Female,Gay,1,0,0
-  804,Female,Bi,1,1,0
-  805,Male,Striaght,1,0,0
-  806,Female,Striaght,1,1,0
-  807,Male,Other,1,0,1
-  808,Male,Other,1,1,1
-  809,Male,Striaght,0,0,0
-  810,Male,Bi,1,1,1
-  811,Male,Bi,0,0,1
-  812,Male,Gay,0,1,1
-  813,Female,Bi,0,0,0
-  814,Female,Gay,0,0,0
-  815,Male,Other,1,1,1
-  816,Male,Striaght,0,0,0
-  817,Female,Bi,1,1,0
-  818,Male,Gay,1,1,1
-  819,Female,Bi,0,1,0
-  820,Male,Other,0,1,1
-  821,Female,Bi,0,1,0
-  822,Male,Gay,1,1,1
-  823,Female,Other,0,0,0
-  824,Male,Striaght,0,0,0
-  825,Female,Bi,0,0,0
-  826,Female,Bi,0,1,0
-  827,Male,Other,0,1,1
-  828,Male,Other,1,1,1
-  829,Male,Striaght,0,1,0
-  830,Female,Other,1,1,0
-  831,Female,Striaght,0,0,0
-  832,Female,Gay,0,0,0
-  833,Male,Gay,0,0,1
-  834,Male,Bi,0,0,1
-  835,Female,Gay,0,0,0
-  836,Male,Bi,0,0,1
-  837,Male,Striaght,0,1,0
-  838,Female,Striaght,1,1,0
-  839,Female,Gay,0,1,0
-  840,Female,Other,0,0,0
-  841,Male,Other,1,0,1
-  842,Male,Other,0,1,1
-  843,Male,Bi,1,1,1
-  844,Male,Gay,1,1,1
-  845,Female,Bi,1,1,0
-  846,Male,Striaght,1,1,0
-  847,Male,Bi,1,1,1
-  848,Male,Striaght,0,1,0
-  849,Male,Bi,0,1,1
-  850,Male,Gay,0,1,1
-  851,Male,Other,0,1,1
-  852,Female,Gay,1,1,0
-  853,Male,Other,1,0,1
-  854,Female,Striaght,1,0,0
-  855,Male,Gay,0,0,1
-  856,Male,Striaght,0,1,0
-  857,Female,Other,1,1,0
-  858,Female,Bi,1,0,0
-  859,Female,Bi,0,1,0
-  860,Female,Gay,1,1,0
-  861,Male,Other,1,0,1
-  862,Male,Striaght,0,1,0
-  863,Male,Bi,1,0,1
-  864,Female,Bi,0,1,0
-  865,Female,Gay,1,0,0
-  866,Male,Bi,1,0,1
-  867,Female,Bi,1,0,0
-  868,Male,Gay,1,1,1
-  869,Male,Striaght,0,1,0
-  870,Male,Gay,1,1,1
-  871,Male,Other,1,1,1
-  872,Male,Bi,1,0,1
-  873,Male,Bi,1,1,1
-  874,Male,Other,1,0,1
-  875,Female,Gay,1,0,0
-  876,Female,Other,0,1,0
-  877,Female,Bi,0,0,0
-  878,Female,Gay,1,0,0
-  879,Male,Gay,0,1,1
-  880,Male,Gay,1,1,1
-  881,Male,Striaght,1,1,0
-  882,Female,Gay,1,1,0
-  883,Female,Gay,0,0,0
-  884,Male,Gay,1,1,1
-  885,Male,Other,0,1,1
-  886,Male,Striaght,1,0,0
-  887,Female,Other,0,0,0
-  888,Male,Other,1,0,1
-  889,Female,Gay,0,1,0
-  890,Female,Bi,0,1,0
-  891,Male,Gay,0,0,1
-  892,Female,Gay,1,1,0
-  893,Female,Striaght,1,0,0
-  894,Male,Gay,1,0,1
-  895,Male,Striaght,0,0,0
-  896,Female,Other,1,0,0
-  897,Male,Bi,1,0,1
-  898,Male,Gay,0,0,1
-  899,Male,Gay,1,1,1
-  900,Male,Other,0,1,1
-  901,Female,Gay,1,1,0
-  902,Female,Other,1,0,0
-  903,Male,Bi,0,0,1
-  904,Male,Striaght,0,1,0
-  905,Female,Gay,0,1,0
-  906,Female,Bi,0,0,0
-  907,Female,Gay,1,1,0
-  908,Female,Gay,0,0,0
-  909,Female,Other,0,0,0
-  910,Female,Other,1,1,0
-  911,Male,Other,0,1,1
-  912,Female,Gay,1,0,0
-  913,Male,Other,1,1,1
-  914,Female,Bi,1,0,0
-  915,Female,Striaght,1,0,0
-  916,Male,Striaght,0,1,0
-  917,Male,Gay,0,1,1
-  918,Female,Other,0,0,0
-  919,Female,Bi,0,1,0
-  920,Female,Striaght,1,1,0
-  921,Female,Striaght,1,1,0
-  922,Female,Other,1,0,0
-  923,Female,Bi,1,1,0
-  924,Female,Striaght,1,1,0
-  925,Female,Other,1,1,0
-  926,Female,Bi,1,0,0
-  927,Male,Gay,0,1,1
-  928,Female,Striaght,1,0,0
-  929,Male,Gay,0,0,1
-  930,Female,Other,0,0,0
-  931,Male,Gay,1,0,1
-  932,Female,Striaght,1,1,0
-  933,Male,Striaght,0,1,0
-  934,Male,Striaght,1,0,0
-  935,Male,Bi,0,1,1
-  936,Female,Striaght,1,0,0
-  937,Male,Gay,0,0,1
-  938,Female,Gay,1,1,0
-  939,Male,Other,1,1,1
-  940,Male,Other,0,1,1
-  941,Male,Other,1,1,1
-  942,Male,Bi,0,1,1
-  943,Male,Gay,0,0,1
-  944,Female,Bi,0,0,0
-  945,Female,Striaght,0,0,0
-  946,Female,Other,0,0,0
-  947,Male,Striaght,0,0,0
-  948,Male,Striaght,1,1,0
-  949,Female,Bi,0,0,0
-  950,Male,Gay,1,0,1
-  951,Male,Other,1,0,1
-  952,Female,Other,1,1,0
-  953,Female,Striaght,0,1,0
-  954,Male,Gay,1,1,1
-  955,Male,Gay,1,1,1
-  956,Female,Bi,1,0,0
-  957,Female,Striaght,1,1,0
-  958,Female,Gay,0,1,0
-  959,Male,Gay,1,0,1
-  960,Male,Striaght,1,0,0
-  961,Female,Striaght,1,0,0
-  962,Female,Bi,1,0,0
-  963,Male,Other,1,1,1
-  964,Female,Striaght,1,1,0
-  965,Male,Striaght,1,0,0
-  966,Female,Other,0,0,0
-  967,Male,Striaght,0,0,0
-  968,Female,Bi,0,0,0
-  969,Male,Striaght,0,0,0
-  970,Male,Gay,1,0,1
-  971,Female,Bi,1,0,0
-  972,Female,Bi,1,0,0
-  973,Female,Bi,1,1,0
-  974,Male,Bi,0,0,1
-  975,Female,Other,0,1,0
-  976,Female,Gay,1,1,0
-  977,Male,Striaght,1,1,0
-  978,Female,Striaght,0,1,0
-  979,Female,Other,0,1,0
-  980,Male,Gay,0,1,1
-  981,Male,Striaght,1,0,0
-  982,Female,Striaght,0,1,0
-  983,Female,Bi,1,0,0
-  984,Male,Gay,1,1,1
-  985,Male,Other,1,1,1
-  986,Female,Other,0,1,0
-  987,Female,Gay,1,1,0
-  988,Female,Striaght,0,0,0
-  989,Female,Striaght,1,0,0
-  990,Female,Gay,1,0,0
-  991,Female,Bi,1,0,0
-  992,Female,Gay,1,0,0
-  993,Female,Gay,1,0,0
-  994,Male,Striaght,1,1,0
-  995,Female,Striaght,1,1,0
-  996,Male,Gay,0,0,1
-  997,Male,Striaght,1,0,0
-  998,Male,Other,0,1,1
-  999,Male,Gay,0,1,1
-  1000,Female,Other,0,0,0</script>
+  <script type="text/csv" id="fakeinfectedpatients">Age,Gender,Orientation,Race,PWID,PreP,MSM,RiskCategory
+23.10129191374017,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+44.779934784398165,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+55.222288920944266,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+34.14925999671701,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+58.205546941009985,Female,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+48.16699637759871,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+29.28687779367352,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+31.87382258510496,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+35.91285863982868,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+39.41387724762009,Female,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+39.400976417440205,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+34.42327306526481,Female,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+40.739354189756,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+36.37698095341008,Female,Gay,Other,Non-PWID,On PreP,Non-MSM,Low
+47.066412827704404,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+40.735069938121924,Female,Other,Asian-American,PWID,On PreP,Non-MSM,Medium
+55.40352590375055,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+50.51222609975085,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+21.90540530380983,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+46.91754241868776,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+53.147028497315944,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+31.149081627293405,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+49.972491148132484,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+46.34694656241636,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+42.493374923312174,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+44.65564711853854,Male,Gay,African-American,PWID,On PreP,MSM,High
+43.22129079448597,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+50.53537694835427,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+40.87621283595384,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+31.871927658390348,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.66965388817819,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+40.23787956533651,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+36.079325156979806,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+37.699953778409444,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.79365626561723,Female,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+50.17215934446533,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+48.97463577778498,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+49.347226575690186,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+41.78023021670653,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+55.94088162569195,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+39.239461517463646,Male,Other,Asian-American,PWID,On PreP,MSM,High
+39.92445290556639,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+43.5376504883787,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+35.41926810901499,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+41.398855923788545,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+46.510648818875005,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+14.27988612643654,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+41.939181455294374,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+36.230504034747604,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+27.788272988207872,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.234640614811035,Male,Other,Latinx,Non-PWID,On PreP,MSM,Medium
+43.02715647141658,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+39.004195241294276,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+52.89833653776791,Male,Gay,Native American,PWID,On PreP,MSM,High
+33.05949770772591,Female,Gay,Other,PWID,Not on PreP,Non-MSM,High
+20.980892960342413,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+40.85702242619685,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+55.12703978155818,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+50.20754895417935,Male,Other,African-American,Non-PWID,Not on PreP,MSM,High
+58.09808742839436,Female,Gay,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+60.151058261541124,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+54.10262445943768,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+58.6112308703821,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+54.18806675336509,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+45.21600828887855,Male,Gay,African-American,Non-PWID,On PreP,MSM,Medium
+30.171159539951987,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+46.14075595362832,Male,Other,Latinx,Non-PWID,Not on PreP,MSM,High
+31.480265990739195,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+43.97648850744561,Male,Other,African-American,Non-PWID,On PreP,MSM,Medium
+40.87399872637206,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+31.12307911162278,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+51.995358878969625,Male,Gay,African-American,PWID,Not on PreP,MSM,Very High
+57.432496500510865,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+34.247075056097366,Male,Gay,Latinx,PWID,Not on PreP,MSM,Very High
+38.64982579255795,Male,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+43.74044459684998,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.39671742252894,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+50.81508691826524,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+39.28308885571545,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+42.649991823053284,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+51.93029105162572,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+49.90263514059119,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+44.74239100150434,Male,Gay,Latinx,PWID,On PreP,MSM,High
+33.28310430516181,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+27.67266968026515,Male,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+60.637723096122166,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+51.45349869267659,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+45.813028551123125,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+27.666707291750342,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+43.05546089428117,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+36.755322434914305,Male,Gay,African-American,PWID,On PreP,MSM,High
+32.602759568735024,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+28.43879700854809,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+64.76157680760478,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+41.37439597255648,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+64.999168865774,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+58.528115084625426,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+55.56417381093012,Male,Other,Latinx,Non-PWID,On PreP,MSM,Medium
+33.08942419529868,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+38.595330476482054,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+28.723036021001274,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+28.94936021638817,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+42.43000873795231,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+48.71040003660972,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+38.44364685561655,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+60.56663017242286,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+35.653450178166864,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+25.628537272214793,Male,Gay,African-American,PWID,On PreP,MSM,High
+53.96087962894285,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+37.98745031657561,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+35.98862629535496,Male,Gay,Latinx,Non-PWID,On PreP,MSM,Medium
+43.02041251573024,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+36.81049610488732,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+55.50478182899879,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+34.67338251573001,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+26.78569681932521,Male,Gay,Latinx,Non-PWID,On PreP,MSM,Medium
+33.75097054820203,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+60.30556829201589,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+33.79489468752422,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+59.90920858561708,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+53.15323792434303,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+53.09084097996653,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+27.454544172221375,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+24.995902537950123,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+52.85467704473939,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+47.32275629858669,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+47.273438169303404,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+42.16571197700234,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+45.217526170682795,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+58.760138496403485,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+28.98249976226854,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+51.839485732137476,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+49.15441999431376,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+33.10677748591999,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+59.28454505604759,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+29.80343326227743,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+38.430144898282705,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+59.30407847105527,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+26.55077287874399,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+37.80848124612805,Female,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+32.84721093242615,Male,Other,Latinx,PWID,On PreP,MSM,High
+45.6637634770458,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+43.88707046678151,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+42.55490741537025,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+39.69085056921881,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+37.375812475362544,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+46.16303853810256,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+46.68260320867456,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+40.21452585081451,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+12.12406128953034,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+46.11034783353815,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+43.781395751578025,Female,Gay,Asian-American,PWID,On PreP,Non-MSM,Medium
+48.990719516453815,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+36.64741864748556,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+49.27256223075699,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+39.7238033940185,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+33.21497877004574,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+36.245041388991226,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+44.582513368611416,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+42.86095053430854,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+50.67372140342676,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+29.50586274831954,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+30.683517367857522,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+40.19849198834845,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+56.786044974980705,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+55.91103106887473,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+37.85556477524893,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+37.26052940282443,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+50.53007991716764,Male,Other,Latinx,PWID,On PreP,MSM,High
+44.20044196858269,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+56.35453225082282,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+47.89517595210471,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+47.7154457416407,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+50.30006778302783,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+30.265932151983787,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+49.73582130750822,Male,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+24.911031108600284,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+32.43811455896535,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+35.86642596419743,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+56.359762504681164,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+40.90920275829862,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+44.409167450060835,Male,Other,African-American,Non-PWID,Not on PreP,MSM,High
+54.547823655066736,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+52.19831497630458,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+32.160319988024334,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+48.680485293673144,Female,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+48.64153567791543,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+52.07386074509583,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+36.76741632653359,Male,Other,African-American,PWID,On PreP,MSM,High
+56.865531071874,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+52.633076899989526,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+43.16642753292899,Male,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+34.60799467926299,Female,Gay,Asian-American,PWID,Not on PreP,Non-MSM,High
+39.13849729281576,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+35.94475381006861,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+57.2928031982596,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+44.4233119468072,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+31.260276118871417,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+40.00310885576293,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+49.49595535887895,Male,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+53.66729986133839,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+44.37250890588464,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+54.625485465234505,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+51.60058356886721,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+60.262296150698916,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+47.811522777527735,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+36.68177182355864,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+51.006572780587916,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+49.78868868816822,Male,Other,Asian-American,PWID,On PreP,MSM,High
+47.78029719813766,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+34.023662740585316,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+45.09482742338986,Male,Gay,Asian-American,PWID,Not on PreP,MSM,Very High
+52.34234902829205,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+33.82376263280194,Male,Other,Native American,PWID,On PreP,MSM,High
+22.225208583065907,Female,Gay,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+48.53647554129571,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+35.06181289861252,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+61.094936233467955,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+47.09565442875531,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+35.488025874610074,Female,Gay,Other,Non-PWID,On PreP,Non-MSM,Low
+40.281471870523106,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+25.541231691723357,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+43.14406651971059,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+47.986116956534225,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+55.956986476154896,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+46.292334197415336,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+59.97102450634813,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+36.86558200896795,Female,Gay,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.043640243692835,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+58.19526313970295,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+32.452795657346215,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+35.33964159600053,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+56.777184766953795,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+47.136968096242136,Female,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+49.98616251819058,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+37.473414716263214,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+56.430629760207964,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+32.914380960247726,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+39.90899279962085,Male,Other,African-American,Non-PWID,Not on PreP,MSM,High
+49.96133758383304,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+43.34286903251406,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+40.60582572209619,Male,Gay,Latinx,PWID,Not on PreP,MSM,Very High
+35.57989829030409,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+43.00290531669447,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+53.357026574191565,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+43.338810270136456,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+44.040101897697205,Male,Gay,African-American,PWID,Not on PreP,MSM,Very High
+40.831083133412506,Female,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+32.66804419890716,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+34.822100405242814,Male,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+62.1055024162262,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+48.76151493270711,Male,Other,African-American,PWID,On PreP,MSM,High
+59.13726881340485,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+47.46176748429716,Female,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+45.72029767290367,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+45.8747157597229,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+34.559765808865095,Male,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+40.03288027980852,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+40.1562020568359,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+43.210917640347326,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+47.68980840788595,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.87361629374586,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+44.24844734964439,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+40.010377129146626,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+63.00876910429216,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+48.19211549656589,Female,Gay,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+39.304727912222,Male,Gay,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+48.98954250744143,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+37.21112289898961,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+33.674926993688885,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+39.927653585082886,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+54.84571130079788,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+47.694602616605174,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+41.36131387198057,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+37.00748675774328,Female,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+57.665285234772824,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+47.61687851583645,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+42.82727315785249,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+36.44346672032881,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+53.94150992351001,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+45.34080016836497,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+41.282366786699995,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+46.442356495166784,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+61.311668512466106,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+48.35768234255311,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+45.01786996137537,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+53.204558007889716,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+48.89019833394764,Female,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+49.34257974801864,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+51.63027376038789,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+39.07426522012875,Male,Other,Other,PWID,On PreP,MSM,High
+18.732815031542582,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+37.32768404394538,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+38.8993810713213,Male,Other,Latinx,PWID,On PreP,MSM,High
+36.28265669228999,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+50.172109552782366,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+49.17539819143174,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+39.18447133573186,Male,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+17.871864675337577,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+44.77600009647986,Male,Other,Latinx,Non-PWID,Not on PreP,MSM,High
+28.418952356892493,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+24.13418475816661,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+39.094252975427864,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+47.26796662636329,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+34.17061630266238,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+32.90675887350282,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+39.36892250109607,Male,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+34.45170560336132,Male,Other,Native American,PWID,On PreP,MSM,High
+24.929815277735756,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+35.79682946215068,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+49.240351543746776,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+50.520995824984155,Male,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+47.168824852167035,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+41.94698896246896,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+57.922307634335176,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+43.567448857300754,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+38.5823333662101,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+54.42123248322055,Male,Gay,African-American,PWID,On PreP,MSM,High
+36.76475885028481,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+48.25322046712532,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+29.750002861133957,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+62.724564086345175,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+50.241956622622055,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+45.86480038036235,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+36.1399489603447,Female,Gay,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+57.92230104165371,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+39.58234754950594,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+36.25069702824143,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+32.77647256370308,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+52.812341681336626,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+47.52808212424007,Male,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+34.270017435478366,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+31.186273757062956,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+47.93562456324978,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+50.687778392789184,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+32.23620356717217,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+50.687097044597394,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+51.09474511913691,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+49.13507564415127,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+45.2685184967461,Female,Gay,Native American,PWID,On PreP,Non-MSM,Medium
+35.047563426522814,Female,Gay,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+42.863661276882546,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+42.03261840805419,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+30.987654396005965,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+56.03336520862649,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+38.71087241561314,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.56785536823165,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+40.67507994357846,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+44.45241192884842,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+44.52298422402519,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+41.773457126794796,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+42.693052559557984,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+34.99208610726194,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+46.25851210788768,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+42.63348166232076,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+47.12809931541956,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+29.943330280213218,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+41.07393521713726,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+58.12373363231027,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+33.03269797673537,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+32.69451294209032,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+41.45861511396519,Male,Gay,Other,PWID,On PreP,MSM,High
+43.94648376140611,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+50.506842022354874,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+51.73198026183218,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+34.210323844376546,Male,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+39.7606889024803,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+39.88545759398001,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+43.07176261190587,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+30.76705509351666,Male,Gay,Asian-American,PWID,On PreP,MSM,High
+62.57204700887819,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+47.83965301419824,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+43.52342622542458,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+50.94812050108765,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+43.93874410845142,Female,Gay,Asian-American,PWID,Not on PreP,Non-MSM,High
+63.28606149295156,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+33.26128530513397,Female,Gay,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+34.80544388444751,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+47.58373401059002,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+52.54450410622174,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+39.86930903515547,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+44.2276421172192,Male,Other,Asian-American,PWID,On PreP,MSM,High
+38.73254484470349,Female,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+12.097394023224894,Male,Gay,Latinx,PWID,Not on PreP,MSM,Very High
+39.32631456697116,Male,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+57.89741278895405,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+44.39622426324293,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+39.36370582734031,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+53.19058755856042,Male,Other,Native American,PWID,Not on PreP,MSM,Very High
+48.172285754577274,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+34.85597716501177,Female,Gay,Native American,PWID,On PreP,Non-MSM,Medium
+46.96923075592898,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+50.747105672400686,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+33.53557254653603,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+27.82021999389669,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+26.450315499376558,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+40.823596837857025,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+46.63566635083413,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+55.442890806837944,Male,Other,Native American,PWID,On PreP,MSM,High
+41.65668642544544,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+28.54438156689751,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+22.379538952843383,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+19.19658590535463,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+46.01834377767474,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+39.56865432235905,Female,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+47.8600706696176,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+40.32558943654185,Female,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+65.1713305574995,Female,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+40.233474191280564,Male,Other,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+46.50430315500939,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+53.46789098391001,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.67439528671089,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+38.72800671377684,Male,Other,Latinx,Non-PWID,On PreP,MSM,Medium
+34.97150249994092,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+37.63062373416501,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+67.12493959731448,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+40.12712096669526,Male,Other,Asian-American,PWID,On PreP,MSM,High
+44.011026307675586,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+44.89059172727816,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+41.075746167633824,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+47.5629374778027,Male,Other,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+63.61655085554095,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+51.479109847300265,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+36.405555938937,Male,Other,African-American,Non-PWID,On PreP,MSM,Medium
+43.83306829383451,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+42.70036922390997,Male,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+31.58978618435252,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+43.26576468797945,Male,Other,Latinx,Non-PWID,Not on PreP,MSM,High
+44.240516639290846,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+37.87312627276104,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+36.1668819427349,Male,Other,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+34.44308516024214,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+34.874039557755175,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+36.570499316051325,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+39.43394871768358,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+38.95048743450457,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+51.698818098792074,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+36.24594305100105,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+39.063484332428246,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+49.89018298834609,Female,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+45.06357657972392,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+47.47083980796065,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+37.021599466803494,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+29.633629490834053,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+28.15123192565208,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+43.74299935691554,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+42.67213656966908,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+35.51553231304142,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+52.64910618736706,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+31.406873881407304,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+29.99395055838725,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+47.77304116252564,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+51.45265948539325,Male,Other,Asian-American,PWID,On PreP,MSM,High
+44.43720255488117,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+32.79957192264695,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+36.99660524552574,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+42.77619139360826,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+52.52480069817753,Male,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+40.29496279718987,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+35.100591948996346,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+46.634263953572365,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+47.27881274920507,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+49.4084511361755,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+49.56233758106776,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+50.894522558831596,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+45.72023836312267,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+45.3052714417269,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+39.43065593655961,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+44.10552526344584,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+25.62760356749537,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+28.057574495984372,Male,Gay,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+42.94617988027803,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+18.332269432764612,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+32.117419551155265,Female,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+41.83826628558951,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+47.408070827224726,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+23.08746693780842,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+56.48102104439301,Male,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+50.12212839918267,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+35.521164398155086,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+45.763571587309606,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+46.488652721325415,Male,Gay,African-American,PWID,Not on PreP,MSM,Very High
+36.28719171740332,Male,Other,Latinx,PWID,On PreP,MSM,High
+51.75861851875571,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+58.176714374709185,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+28.966417502153213,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+40.740350804549635,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+47.63238657143897,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+60.80838799133156,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+34.402438255228915,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+41.443440762445306,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+42.876646679684086,Male,Other,Native American,PWID,On PreP,MSM,High
+45.55540153602805,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+59.47425678646764,Male,Gay,Other,PWID,On PreP,MSM,High
+47.51396430105197,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+36.771435164847304,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+49.811342956234284,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+37.706403967644114,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+38.33359611931088,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+39.41765189389683,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+45.91551096821538,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+34.40908670116378,Male,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+45.258828508765426,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+34.97038627794255,Female,Gay,Asian-American,PWID,Not on PreP,Non-MSM,High
+67.64140816769185,Male,Gay,African-American,PWID,Not on PreP,MSM,Very High
+47.43532422893474,Male,Gay,African-American,PWID,Not on PreP,MSM,Very High
+57.18069540919493,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+50.228828288496295,Male,Other,Asian-American,PWID,On PreP,MSM,High
+41.659927278022096,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+43.05861608774443,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+55.1942926930436,Female,Gay,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+65.46257886326532,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+41.500361198729735,Male,Other,Other,PWID,On PreP,MSM,High
+39.24809395560145,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+46.697853409816894,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+43.21630872382724,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+42.75899016323434,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+47.21130964562562,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+31.3440413640508,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+31.631374871645114,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+42.59817943847652,Male,Gay,Asian-American,PWID,On PreP,MSM,High
+51.84770577104755,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+25.054299948466884,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+49.07207039837046,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+26.242031756707668,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+51.55527218471311,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+36.41457177251533,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+32.5861390177369,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+36.44723436629259,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+31.73822663813571,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+41.169740869880386,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+26.752758483604623,Male,Gay,Native American,PWID,On PreP,MSM,High
+57.380291288790346,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+32.22851455976821,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+52.97735391607594,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+27.752315641110403,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+28.857749306780086,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+26.879818025395764,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+46.24939456217085,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+47.14418877949548,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+32.779078012175866,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+32.165874645006305,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+41.209794416370414,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+37.39809693202161,Male,Other,Other,PWID,On PreP,MSM,High
+31.567135687201805,Female,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+45.02932449383649,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+33.15112876448188,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+44.43862269661602,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+37.021212949850685,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+32.8214048298988,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+25.86676936843062,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+37.50457687842206,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+29.25116635469658,Male,Gay,Latinx,Non-PWID,On PreP,MSM,Medium
+31.378718266449813,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+48.65809001663884,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+30.292546365644945,Female,Gay,Native American,PWID,On PreP,Non-MSM,Medium
+44.598821258322246,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+35.60726107174835,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+47.899078705781676,Female,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+20.257550039003966,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+46.56415925826006,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+30.33456673035803,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+42.96193616031066,Female,Gay,Other,PWID,Not on PreP,Non-MSM,High
+42.59058854618777,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+38.80700260099907,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+39.008178082259676,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+31.968531647883893,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+32.51935491729519,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+56.534226849958024,Male,Gay,African-American,PWID,On PreP,MSM,High
+18.617694008671624,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+71.28926184384515,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+31.49695067634766,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+43.40362334202868,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+40.20393731695163,Male,Gay,African-American,PWID,On PreP,MSM,High
+47.42129349094577,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+36.65847515969216,Female,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+36.85696524694002,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+40.128423504004914,Male,Gay,African-American,PWID,On PreP,MSM,High
+27.891012107739083,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+46.675463963926994,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+33.08401964424583,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+54.10652736613032,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+26.444098626502722,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+51.25604479040681,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+56.56300741783062,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+36.17631734455305,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+32.90369393612241,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+61.750964950253504,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+62.31660843079557,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+32.134308479661385,Male,Gay,African-American,Non-PWID,On PreP,MSM,Medium
+52.91232809800198,Male,Other,Latinx,PWID,On PreP,MSM,High
+46.81925769873977,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+36.584114617690645,Male,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+44.734954666674774,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+53.56735734662003,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+38.26358257786643,Male,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+49.65164116286861,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+33.35585251191395,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+29.010799093448963,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+42.34154876253697,Female,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+25.348180169971492,Male,Other,Native American,PWID,Not on PreP,MSM,Very High
+46.37759340870381,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+38.57605823107083,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+48.11056490685368,Male,Other,Native American,PWID,On PreP,MSM,High
+37.407055108816536,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+11,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+23.155544976242005,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+54.982665600237425,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+60.3625520298623,Male,Other,Other,PWID,On PreP,MSM,High
+51.57339484618632,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+45.047125514121376,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+44.71239294869258,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+27.77870254294188,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+38.69736126845076,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+44.6227345025537,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+40.146906414867146,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+43.55659634256502,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+45.46750433264857,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+37.914821822405344,Male,Gay,Latinx,PWID,Not on PreP,MSM,Very High
+43.25562859905149,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+47.86838170369312,Female,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+25.52420619429234,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+35.529257214974685,Male,Other,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+55.36239157908109,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+27.953557492910186,Female,Gay,Asian-American,PWID,Not on PreP,Non-MSM,High
+46.276842948932426,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+67.78897286979516,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+35.976365082594015,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+61.98855555627211,Female,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+21.731798523669834,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+29.469235128077564,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+51.4786392816872,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+65.95262078176381,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+34.40050248320796,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+26.02563922010362,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+39.761543636430645,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+31.102991324603057,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+39.7262160861177,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+57.38779138482161,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+30.080874452603894,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+70.56048283648052,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+32.56195887374723,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+34.64457710012559,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+37.43862763541856,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+31.75241585598293,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+34.91315771129086,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+43.796657233047604,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+31.32074739385749,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+53.519442244232536,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+30.027383997302916,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+58.87927436694628,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+45.267100116850465,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+55.61464728934025,Male,Other,African-American,Non-PWID,On PreP,MSM,Medium
+48.56902688865465,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+32.875155206944115,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+23.83942882724027,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+22.270198271955405,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+34.85168628517958,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+31.462865772095242,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+34.676867889224454,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+33.63764816210862,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+53.41542154359847,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+35.167378823319446,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+45.0957314463285,Male,Gay,Other,Non-PWID,On PreP,MSM,Medium
+53.03030683109166,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+38.89688598377921,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+34.59918884328292,Male,Other,Latinx,PWID,On PreP,MSM,High
+64.53119044784154,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+66.23117866224025,Female,Other,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+43.083014693429476,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+36.252025171298584,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+39.37879119968399,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+43.1799443712416,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+42.43815102093747,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+35.21967154085865,Female,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+39.661574818454355,Male,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+51.573700267672486,Male,Other,African-American,Non-PWID,Not on PreP,MSM,High
+56.37274668639573,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+39.067277265593276,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+33.70222600526626,Male,Other,Latinx,Non-PWID,Not on PreP,MSM,High
+49.56580947121594,Female,Gay,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+22.781378995841045,Female,Gay,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+31.822511176696707,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+26.970550253754745,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+42.656544638934946,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+30.8702728130922,Male,Gay,Latinx,PWID,Not on PreP,MSM,Very High
+28.74829981663293,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+44.74578015325589,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+33.592928971669025,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+30.621123016261443,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+44.75548063242489,Female,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+41.50981586859383,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+30.674845822326287,Male,Other,Native American,PWID,Not on PreP,MSM,Very High
+33.951101144866364,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+28.941487112000825,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+13.658069757059454,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+44.69110675967747,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+49.32641461946412,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+33.07041118675475,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+36.07672039722986,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+42.63457954661291,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+22.67352145008639,Female,Other,Other,PWID,On PreP,Non-MSM,Medium
+38.71731851206382,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+35.862688893262174,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+32.37378830915902,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+53.733424656041514,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+48.034896230621705,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+46.00125541216326,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+63.177614216813055,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+66.38293526838231,Male,Gay,Native American,PWID,On PreP,MSM,High
+35.46104499436067,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+47.586185419241076,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+57.651794089208266,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+46.252716365105556,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+40.32776748092046,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+55.056967289903035,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+37.55413176714177,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+33.46796152228184,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.40253496366894,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+27.188294685662843,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+56.26949452072813,Female,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+50.274793169550065,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+28.368513791755387,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+28.933183499789475,Male,Gay,Latinx,PWID,On PreP,MSM,High
+46.72002397976059,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+52.19116218216625,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+45.35993744272792,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+48.16658969278308,Male,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+36.70905032751474,Male,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,MSM,Medium
+43.354919968852784,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+49.589878052350144,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+49.75691059482061,Male,Gay,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+47.020762653688294,Male,Gay,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+56.658529555712086,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+33.84394900129211,Male,Other,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+32.4338611970839,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+43.97544983405669,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+41.988796883045865,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+27.877637041027583,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+28.57011921191822,Male,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+42.53851698037674,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+51.038958404674894,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+39.81702113521837,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+40.829645115112925,Male,Other,Asian-American,PWID,Not on PreP,MSM,Very High
+54.388351840775925,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+27.878426935858514,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+60.785721811728536,Female,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+38.60558874913059,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+28.827158587412196,Female,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+41.64208130709631,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+54.06140822037365,Male,Gay,Native American,PWID,On PreP,MSM,High
+42.68807469322306,Male,Gay,African-American,Non-PWID,On PreP,MSM,Medium
+34.53923213909958,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+45.795073168890326,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+42.426459750738736,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+35.69562672514708,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+25.631903740256398,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+18.953157288959037,Female,Striaght,Latinx,PWID,On PreP,Non-MSM,Medium
+47.55969846643738,Female,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+35.24950482625495,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+41.73846341056126,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+54.65130663399697,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+36.41534664761858,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+55.92920387037756,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+44.58661123450622,Female,Gay,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+45.938038429451034,Female,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+52.229860773678126,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+35.44063734039674,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+46.681616634943,Female,Gay,Asian-American,PWID,On PreP,Non-MSM,Medium
+33.59403857069972,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+49.5396953086168,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+40.240223314565284,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.57456965308959,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+23.82971940050657,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+42.740952153914286,Male,Gay,Asian-American,Non-PWID,Not on PreP,MSM,High
+51.574854272457834,Male,Gay,African-American,PWID,On PreP,MSM,High
+46.772131488054825,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+48.30932642020991,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+53.773096622247465,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+43.90061984312476,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+37.80904151035794,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+34.40866101945886,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+46.70533954882836,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+44.303609038487195,Female,Gay,African-American,Non-PWID,On PreP,Non-MSM,Low
+73.22049933003197,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+31.102181288626923,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+50.976400444851954,Female,Other,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+63.65649937291311,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+38.14830737587135,Male,Striaght,Other,Non-PWID,On PreP,Non-MSM,Low
+32.065862125157246,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+39.622792763801,Male,Other,Other,Non-PWID,Not on PreP,MSM,High
+35.60253288412589,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+53.79705168671281,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+43.43382768177016,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+40.10573941651174,Male,Other,African-American,PWID,On PreP,MSM,High
+34.69899126786764,Male,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+14.588987446048115,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+47.421118309973714,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+58.86348057893824,Male,Other,Native American,PWID,On PreP,MSM,High
+45.78920533140418,Male,Other,African-American,PWID,On PreP,MSM,High
+38.48116955027696,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+50.2117137864468,Male,Other,Latinx,PWID,On PreP,MSM,High
+45.14801650910295,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+54.880932979468824,Female,Gay,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+45.628087774651355,Female,Other,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+59.346960482512785,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+35.12642942291291,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+48.708877189641015,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+50.673208176925755,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+41.74658647104519,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+54.021955878838185,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+36.03163385711009,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+48.70748488606066,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+39.69011148652079,Male,Gay,Asian-American,PWID,On PreP,MSM,High
+34.37581708404268,Male,Other,Latinx,PWID,On PreP,MSM,High
+54.66555601483414,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+46.558722489634505,Male,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+35.76811365211388,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+48.39367962299032,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+49.62549809523387,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+37.18486065403691,Male,Gay,Other,PWID,On PreP,MSM,High
+23.616819755334102,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+24.941756820268303,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+39.97212842077854,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+41.09877358914942,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low
+48.21961702857101,Male,Gay,Native American,PWID,On PreP,MSM,High
+48.80366193555541,Male,Gay,Latinx,Non-PWID,Not on PreP,MSM,High
+56.35305622982156,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+45.59685369198161,Male,Other,Native American,Non-PWID,On PreP,MSM,Medium
+28.039304783379187,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+43.49332217112321,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+47.23145653720965,Male,Gay,Asian-American,Non-PWID,On PreP,MSM,Medium
+48.13975883747012,Female,Other,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+46.67602184556116,Male,Other,Native American,PWID,Not on PreP,MSM,Very High
+65.02352659615266,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+40.11752030262142,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+39.84065858759857,Female,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+45.437149231895546,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+45.86018592481126,Male,Other,Latinx,PWID,On PreP,MSM,High
+32.17785621809967,Male,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+35.86498390475542,Male,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+36.851769951176415,Male,Gay,Other,Non-PWID,Not on PreP,MSM,High
+49.020419086934766,Female,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+27.836743902329587,Female,Gay,Native American,PWID,On PreP,Non-MSM,Medium
+54.22099582096119,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+35.31836664579113,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+41.85730745764894,Male,Gay,Other,PWID,Not on PreP,MSM,Very High
+41.73010158857602,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+33.73992950765329,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+46.43736258248104,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+53.703321253147884,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+33.8789855820398,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+26.97580796149986,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+35.82230634999826,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+63.40310931196903,Female,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+31.70755356665767,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+50.25259975595134,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+51.94418806763972,Female,Other,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+46.558619847130146,Male,Other,Latinx,PWID,On PreP,MSM,High
+51.05327317818789,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+41.10297065613864,Male,Other,Latinx,Non-PWID,Not on PreP,MSM,High
+33.36132655845732,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+55.53531777660661,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+33.900469696382416,Female,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+40.334716618100146,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+53.1288044663623,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+57.57926884031564,Male,Other,Asian-American,PWID,On PreP,MSM,High
+60.051193452125965,Male,Other,Asian-American,PWID,On PreP,MSM,High
+29.34796256732482,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+51.88266635082201,Female,Other,Asian-American,PWID,On PreP,Non-MSM,Medium
+45.33729312019609,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+50.37508967100891,Male,Gay,Latinx,Non-PWID,On PreP,MSM,Medium
+46.76816303205849,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+45.47799566026959,Male,Other,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+38.379348099397006,Male,Gay,Other,PWID,On PreP,MSM,High
+32.07168884097657,Male,Gay,Latinx,Non-PWID,On PreP,MSM,Medium
+47.66197361260971,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+44.99650679977221,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+45.98179720095726,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+37.480275769383915,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+30.131604816953114,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+52.89574840795201,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+30.960210721169556,Female,Other,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+42.95095761585046,Male,Gay,Native American,Non-PWID,Not on PreP,MSM,High
+53.533940317470865,Female,Other,Asian-American,PWID,On PreP,Non-MSM,Medium
+43.37654995815012,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+43.85244876226551,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+40.34055869847753,Female,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+42.193080284547904,Male,Other,Asian-American,Non-PWID,On PreP,MSM,Medium
+47.58878613646918,Male,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+54.45283818595412,Female,Gay,Asian-American,PWID,On PreP,Non-MSM,Medium
+40.15834437226562,Male,Other,Other,PWID,Not on PreP,MSM,Very High
+32.43098936245791,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+37.83350850348681,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+26.49649703962271,Female,Gay,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+48.57285517177505,Female,Gay,Other,PWID,On PreP,Non-MSM,Medium
+44.0984989653304,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+61.9945219753625,Female,Other,Latinx,PWID,On PreP,Non-MSM,Medium
+29.487336011362597,Male,Gay,Asian-American,PWID,On PreP,MSM,High
+34.4474549772617,Female,Striaght,Native American,PWID,On PreP,Non-MSM,Medium
+25.477366672062836,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+43.80678609101492,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+49.926752222549,Female,Striaght,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+34.12002081405649,Female,Gay,Other,PWID,Not on PreP,Non-MSM,High
+58.2867738787107,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+30.958715714817224,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+32.64454204178337,Female,Striaght,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+56.28994995577602,Male,Other,African-American,PWID,Not on PreP,MSM,Very High
+34.020184204364256,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+46.30450643950023,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+54.819339041181976,Male,Striaght,Latinx,PWID,Not on PreP,Non-MSM,High
+44.223350265985815,Female,Gay,Latinx,PWID,Not on PreP,Non-MSM,High
+37.11699819741676,Male,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+33.54331585058619,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+49.00537721456574,Male,Gay,African-American,Non-PWID,Not on PreP,MSM,High
+39.6592211021204,Male,Gay,Asian-American,PWID,On PreP,MSM,High
+38.8979276163712,Female,Striaght,Native American,PWID,Not on PreP,Non-MSM,High
+41.30823097127389,Female,Other,Other,Non-PWID,On PreP,Non-MSM,Low
+46.37832512744569,Male,Other,Caucasian (Non-Latinx),Non-PWID,Not on PreP,MSM,High
+32.62490143177738,Female,Other,Native American,PWID,Not on PreP,Non-MSM,High
+33.41402826759622,Male,Other,Native American,PWID,On PreP,MSM,High
+49.331501837746906,Female,Other,Asian-American,PWID,Not on PreP,Non-MSM,High
+30.168977832118422,Female,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+31.275813918058496,Male,Other,Other,Non-PWID,On PreP,MSM,Medium
+45.19666129641468,Female,Gay,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+32.16202434995579,Male,Other,Other,PWID,On PreP,MSM,High
+48.30946693452426,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+38.68967497458593,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+72.56163436584788,Male,Gay,Asian-American,PWID,Not on PreP,MSM,Very High
+49.539262520131004,Female,Other,African-American,Non-PWID,On PreP,Non-MSM,Low
+44.14322092781171,Male,Gay,Caucasian (Non-Latinx),PWID,Not on PreP,MSM,Very High
+55.18358537728302,Female,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+48.15291943632044,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+44.98713147599479,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+34.50721853979206,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+36.954259045205085,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+36.527206220288676,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+36.380001676332,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+37.843184272111074,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+48.24011194438456,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+37.2270508259255,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+45.872938861612674,Female,Striaght,Latinx,Non-PWID,On PreP,Non-MSM,Low
+35.98998588822434,Female,Other,African-American,PWID,Not on PreP,Non-MSM,High
+44.23714600264919,Female,Gay,African-American,PWID,Not on PreP,Non-MSM,High
+31.50310404730228,Female,Other,Latinx,PWID,Not on PreP,Non-MSM,High
+29.04499429184338,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+49.961061403678826,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+23.39029713238908,Male,Striaght,African-American,PWID,Not on PreP,Non-MSM,High
+49.69888279442096,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+37.64188293307208,Female,Gay,Native American,PWID,Not on PreP,Non-MSM,High
+52.11761992810877,Male,Striaght,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+39.20078778605995,Female,Other,Latinx,Non-PWID,On PreP,Non-MSM,Low
+42.40554310695719,Male,Other,Native American,PWID,On PreP,MSM,High
+28.40446652176302,Male,Other,Asian-American,PWID,On PreP,MSM,High
+40.49284082725615,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+36.87800640997794,Male,Striaght,Asian-American,PWID,On PreP,Non-MSM,Medium
+32.29160045358459,Male,Other,Native American,Non-PWID,Not on PreP,MSM,High
+40.46316753663209,Female,Gay,African-American,PWID,On PreP,Non-MSM,Medium
+30.285478803436526,Female,Gay,Latinx,Non-PWID,On PreP,Non-MSM,Low
+41.796169061706024,Female,Striaght,African-American,PWID,On PreP,Non-MSM,Medium
+23.015135445198766,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+44.992764711797406,Female,Other,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+75.46758581438063,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+25.29465396157599,Male,Other,African-American,Non-PWID,On PreP,MSM,Medium
+60.65635959479417,Male,Striaght,Caucasian (Non-Latinx),PWID,Not on PreP,Non-MSM,High
+40.411811974066595,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+53.008020085384885,Male,Other,Asian-American,Non-PWID,Not on PreP,MSM,High
+46.53224885173726,Female,Striaght,Caucasian (Non-Latinx),Non-PWID,Not on PreP,Non-MSM,Medium
+55.222068478749705,Male,Other,Latinx,PWID,Not on PreP,MSM,Very High
+55.146424213709004,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+30.948001192704627,Female,Striaght,African-American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.76563259382276,Male,Striaght,Caucasian (Non-Latinx),Non-PWID,On PreP,Non-MSM,Low
+54.403642314270016,Female,Gay,Asian-American,Non-PWID,On PreP,Non-MSM,Low
+43.50445294405752,Male,Gay,Native American,PWID,Not on PreP,MSM,Very High
+36.44521931311414,Female,Other,Native American,PWID,On PreP,Non-MSM,Medium
+47.62419479053999,Female,Other,African-American,PWID,On PreP,Non-MSM,Medium
+25.379105542284293,Male,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+57.43309346371038,Male,Other,African-American,Non-PWID,Not on PreP,MSM,High
+35.785818516815375,Female,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+54.6615244149144,Female,Other,Native American,Non-PWID,On PreP,Non-MSM,Low
+41.80415649251525,Male,Other,Asian-American,PWID,On PreP,MSM,High
+42.04292059392654,Female,Striaght,Asian-American,Non-PWID,Not on PreP,Non-MSM,Medium
+40.67398120144914,Male,Striaght,African-American,Non-PWID,On PreP,Non-MSM,Low
+38.27142147947423,Female,Gay,Latinx,PWID,On PreP,Non-MSM,Medium
+37.096587279201664,Male,Striaght,Other,PWID,On PreP,Non-MSM,Medium
+46.43105954802351,Female,Striaght,Native American,Non-PWID,On PreP,Non-MSM,Low
+35.903791289307165,Male,Striaght,Native American,Non-PWID,Not on PreP,Non-MSM,Medium
+42.60095571703903,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+30.685611652010518,Male,Gay,Native American,Non-PWID,On PreP,MSM,Medium
+37.133292125924015,Male,Striaght,Asian-American,PWID,Not on PreP,Non-MSM,High
+45.41447149716437,Female,Other,Latinx,Non-PWID,Not on PreP,Non-MSM,Medium
+31.846822528934965,Male,Gay,Caucasian (Non-Latinx),PWID,On PreP,MSM,High
+14.395080660205082,Male,Other,Asian-American,PWID,On PreP,MSM,High
+37.83049711214045,Female,Other,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+28.583181932879,Female,Striaght,Caucasian (Non-Latinx),PWID,On PreP,Non-MSM,Medium
+34.20261465885734,Male,Gay,Other,PWID,On PreP,MSM,High
+34.95601113892699,Male,Striaght,Other,PWID,Not on PreP,Non-MSM,High
+30.547164723668786,Female,Other,Other,PWID,Not on PreP,Non-MSM,High
+39.49276194552134,Female,Gay,Other,Non-PWID,Not on PreP,Non-MSM,Medium
+47.63810451159458,Female,Gay,Native American,Non-PWID,On PreP,Non-MSM,Low</script>
 
   <script>
   var width = 940;
-  var height = 600;
+  var height = 550;
   var center = { x: width / 2, y: height / 2 };
 
   var svg = d3.select('#vis')
@@ -1049,7 +1059,7 @@
     .enter().append('circle')
       .attr('r', 5)
       .attr('stroke', '#000000')
-      .attr('stroke-width', 2);
+      .attr('stroke-width', 1);
 
   var forceStrength = 0.03;
 
@@ -1094,38 +1104,57 @@
 
   groupBubbles('None');
 
+  d3.select('#group-toolbar').selectAll('a')
+    .data(['None'].concat(data.columns)).enter().append('a')
+    .classed('button', true)
+    .text(function(d){ return d; })
+    .on('click', function(){
+      var button = d3.select(d3.event.target);
+      d3.select('#group-toolbar').selectAll('.button').classed('active', false);
+      button.classed('active', true);
+      groupBubbles(button.text());
+    });
+
   function colorBubbles(field){
     if(field === 'None'){
-      bubbles.attr('fill', '#44ff44');
+      bubbles.attr('fill', d3.schemeCategory10[0]);
       return;
     }
-    var values = [];
+    var fillColor, values = [];
     data.forEach(function(d){
       if(values.indexOf(d[field]) == -1) values.push(d[field]);
     });
-    var fillColor = d3.scaleOrdinal()
-      .domain(values)
-      .range(d3.schemeCategory10.slice(0, values.length));
-    bubbles.attr('fill', function(d){
-      return fillColor(d[field])
-    });
+    if(field === "Age"){
+      values = values.map(parseFloat);
+      var min = values.reduce(function(e, a){ return Math.min(e, a); });
+      var max = values.reduce(function(e, a){ return Math.max(e, a); });
+      fillColor = d3.scaleLinear()
+        .domain([min, max])
+        .range(["white", "black"]);
+      bubbles.transition()
+        .attr('fill', function(d){ return fillColor(parseFloat(d[field])); });
+    } else {
+      fillColor = d3.scaleOrdinal()
+        .domain(values)
+        .range(d3.schemeCategory10.slice(0, values.length));
+      bubbles.transition()
+        .attr('fill', function(d){ return fillColor(d[field]); });
+    }
   }
 
   colorBubbles('Gender');
 
-  d3.select('#toolbar')
-    .selectAll('.button')
+  d3.select('#color-toolbar').selectAll('a')
+    .data(['None'].concat(data.columns)).enter().append('a')
+    .classed('button', true)
+    .text(function(d){ return d; })
     .on('click', function(){
       var button = d3.select(d3.event.target);
-      var attr = button.attr('data-attr');
-      d3.selectAll('.button[data-attr="'+attr+'"]').classed('active', false);
+      d3.select('#color-toolbar').selectAll('.button').classed('active', false);
       button.classed('active', true);
-      if(attr === 'group'){
-        groupBubbles(button.attr('data-field'));
-      } else {
-        colorBubbles(button.attr('data-field'));
-      }
+      colorBubbles(button.text());
     });
+
 </script>
 </body>
 </html>
