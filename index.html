@@ -113,6 +113,7 @@
     d3.select('#group-toolbar').selectAll('a')
       .data(['None'].concat(data.columns)).enter().append('a')
       .classed('button', true)
+      .classed('active', function(d){ return d === 'None'})
       .text(function(d){ return d; })
       .on('click', function(){
         var button = d3.select(d3.event.target);
@@ -149,6 +150,7 @@
     d3.select('#color-toolbar').selectAll('a')
       .data(['None'].concat(data.columns)).enter().append('a')
       .classed('button', true)
+      .classed('active', function(d){ return d === 'Gender'})
       .text(function(d){ return d; })
       .on('click', function(){
         var button = d3.select(d3.event.target);
