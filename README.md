@@ -22,20 +22,20 @@ See also: [Known Oversights](https://github.com/AABoyles/Bubbles/labels/known%20
 
 ### Fields
 
-`Age at Diagnoses` - The age at which the patient was diagnosed. Distribution taken from the diagram "New HIV Diagnoses in the United State by Age, 2016" of [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html).
-`Sex at Birth` - Estimate taken from [Wikipedia: Human Sex Ratio](https://en.wikipedia.org/wiki/Human_sex_ratio)
-`Sexual Orientation` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
-`Race` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
-`Region` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
-`PWID` (Person who Injects Drugs) - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
-`Viral Supression` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
-`Gender` - Estimated from [HIV Among Transgender People](https://www.cdc.gov/hiv/group/gender/transgender/index.html)
-`MSM` (Men who have Sex with Men) - Derived as persons whose `Sex at Birth` is
+* `Age at Diagnoses` - The age at which the patient was diagnosed. Distribution taken from the diagram "New HIV Diagnoses in the United State by Age, 2016" of [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html).
+* `Sex at Birth` - Estimate taken from [Wikipedia: Human Sex Ratio](https://en.wikipedia.org/wiki/Human_sex_ratio)
+* `Sexual Orientation` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
+* `Race` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
+* `Region` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
+* `PWID` (Person who Injects Drugs) - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
+* `Viral Supression` - Estimated from [HIV in the United States: At A Glance](https://www.cdc.gov/hiv/statistics/overview/ataglance.html)
+* `Gender` - Estimated from [HIV Among Transgender People](https://www.cdc.gov/hiv/group/gender/transgender/index.html)
+* `MSM` (Men who have Sex with Men) - Derived as persons whose `Sex at Birth` is
 coded as "Male" and whose `Sexual Orientation` is anything other than "Straight".
-`Transmission Category` - Derived as the groupings of `MSM`, `PWID`, Heterosexual
+* `Transmission Category` - Derived as the groupings of `MSM`, `PWID`, Heterosexual
 non-PWID (coded "HET"), and "Other" (e.g. Persons with Hemophilia who recieved
 tainted transfusion products in the 1980's).
-`Risk Category` - Derived as the sum of the `MSM`, `PWID`, and `Viral Supression`
+* `Risk Category` - Derived as the sum of the `MSM`, `PWID`, and `Viral Supression`
 fields.
 
 ### Generation
