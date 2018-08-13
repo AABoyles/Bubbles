@@ -1,0 +1,1001 @@
+Age at Diagnosis,Sex at Birth,Sexual Orientation,Race,Region,PWID,Viral Supression,Gender,MSM,Transmission Category,RiskCategory
+20-29,Female,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Female,Straight,Hispanic/Latinx,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Male,Straight,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Bi,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,Native American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,West,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Bi,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Bi,Other,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,Native American,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+40-49,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Bi,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,PWID,Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,Northeast,PWID,Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Bi,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Bi,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Straight,African-American,South,PWID,Supressed,Cis Man,Non-MSM,PWID,Medium
+40-49,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+50-59,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Hispanic/Latinx,West,Non-PWID,Supressed,Trans Woman,Non-MSM,HET,Low
+40-49,Female,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Bi,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Bi,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,African-American,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+50-59,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+13-19,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Female,Bi,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Other,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Bi,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Bi,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Bi,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Female,Bi,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Male,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,African-American,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Male,Gay,Other,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Straight,Other,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Straight,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+60+,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+13-19,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,African-American,Midwest,PWID,Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Straight,African-American,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Native American,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+40-49,Male,Straight,African-American,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Native American,West,Non-PWID,Not Supressed,Trans Woman,MSM,MSM,High
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Male,Bi,Other,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+13-19,Male,Bi,Other,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Gay,Asian-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,Midwest,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+40-49,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Hispanic/Latinx,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Male,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,Other,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,Native American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Bi,Caucasian (Non-Hispanic/Latinx),South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+60+,Male,Straight,Other,Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Male,Gay,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+60+,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Male,Gay,Native American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Intersex,Gay,African-American,South,Non-PWID,Not Supressed,Intersex,Non-MSM,Other,Medium
+50-59,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,Northeast,PWID,Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+13-19,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Intersex,Gay,African-American,Midwest,Non-PWID,Supressed,Intersex,Non-MSM,Other,Low
+50-59,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Straight,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Bi,Hispanic/Latinx,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Female,Straight,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Straight,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Female,Straight,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Straight,Other,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Native American,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),South,PWID,Not Supressed,Cis Man,Non-MSM,PWID,High
+30-39,Female,Straight,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Straight,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Other,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Straight,Hispanic/Latinx,West,PWID,Supressed,Trans Woman,Non-MSM,PWID,Medium
+20-29,Female,Gay,Other,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Gay,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Male,Gay,Hispanic/Latinx,West,PWID,Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Straight,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Straight,Other,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,African-American,Midwest,Non-PWID,Supressed,Trans Woman,Non-MSM,HET,Low
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Native American,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Bi,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Hispanic/Latinx,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,African-American,Midwest,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Female,Gay,African-American,Midwest,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Female,Straight,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Straight,African-American,West,PWID,Not Supressed,Cis Man,Non-MSM,PWID,High
+40-49,Male,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Male,Straight,Native American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Bi,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Native American,South,PWID,Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Straight,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+60+,Female,Straight,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Bi,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Male,Straight,Native American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+50-59,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Female,Bi,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Native American,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Female,Bi,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Bi,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Bi,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Male,Straight,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Gay,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Bi,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Female,Bi,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Female,Straight,Other,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Gay,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,African-American,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Bi,Hispanic/Latinx,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+50-59,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Intersex,Gay,African-American,West,Non-PWID,Not Supressed,Intersex,Non-MSM,Other,Medium
+30-39,Male,Gay,Other,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Straight,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Straight,Native American,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Other,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,Hispanic/Latinx,South,PWID,Supressed,Cis Man,Non-MSM,PWID,Medium
+30-39,Female,Gay,Native American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Male,Straight,Other,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Female,Straight,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Bi,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Bi,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Asian-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Native American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Straight,African-American,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Straight,Other,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+13-19,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Bi,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,West,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+50-59,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Female,Straight,Native American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Straight,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Straight,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Female,Bi,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Straight,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Male,Gay,African-American,Northeast,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Intersex,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Intersex,Non-MSM,Other,Medium
+20-29,Female,Gay,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Bi,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Other,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,African-American,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,Hispanic/Latinx,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,African-American,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Other,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Bi,Asian-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Straight,Other,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Male,Straight,Other,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Straight,African-American,Northeast,PWID,Not Supressed,Cis Man,Non-MSM,PWID,High
+20-29,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Straight,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,African-American,Midwest,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Bi,African-American,West,Non-PWID,Not Supressed,Trans Woman,MSM,MSM,High
+20-29,Male,Bi,African-American,Midwest,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Bi,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Bi,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Gay,African-American,Midwest,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Male,Straight,African-American,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Bi,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,West,PWID,Not Supressed,Trans Woman,MSM,MSM,Very High
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Bi,Other,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Other,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Hispanic/Latinx,South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Male,Bi,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Other,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Male,Bi,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Bi,Native American,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Native American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Male,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Straight,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,African-American,West,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+40-49,Male,Gay,African-American,Midwest,PWID,Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Bi,Native American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Straight,African-American,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Bi,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Bi,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,African-American,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Other,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,African-American,South,Non-PWID,Supressed,Trans Woman,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Hispanic/Latinx,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+30-39,Male,Straight,African-American,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Bi,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Asian-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Straight,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Bi,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Native American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Bi,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Straight,African-American,West,PWID,Supressed,Cis Man,Non-MSM,PWID,Medium
+20-29,Male,Bi,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+60+,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Bi,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Straight,African-American,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Bi,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Bi,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Other,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+20-29,Male,Gay,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+13-19,Male,Bi,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Asian-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Bi,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Bi,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Male,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Bi,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+40-49,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Straight,Other,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+13-19,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Other,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Hispanic/Latinx,Northeast,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Straight,Other,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Intersex,Gay,Other,West,Non-PWID,Not Supressed,Intersex,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+30-39,Female,Straight,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,Asian-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Bi,Other,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+40-49,Male,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+50-59,Female,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Other,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,African-American,West,PWID,Not Supressed,Cis Man,Non-MSM,PWID,High
+30-39,Female,Gay,Hispanic/Latinx,Midwest,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Other,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Straight,Hispanic/Latinx,West,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Male,Gay,African-American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+40-49,Female,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Other,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Straight,African-American,South,PWID,Supressed,Cis Man,Non-MSM,PWID,Medium
+13-19,Female,Bi,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Northeast,PWID,Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,West,Non-PWID,Supressed,Trans Woman,MSM,MSM,Medium
+30-39,Female,Gay,African-American,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+60+,Male,Gay,Other,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Bi,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+60+,Female,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Straight,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Straight,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Midwest,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Female,Bi,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Female,Bi,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,Hispanic/Latinx,Midwest,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Other,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+13-19,Female,Gay,African-American,West,PWID,Not Supressed,Trans Man,Non-MSM,PWID,High
+50-59,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Male,Straight,Native American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+50-59,Female,Straight,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Male,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,West,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+40-49,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,Asian-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+60+,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Bi,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Female,Bi,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Male,Gay,Other,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+13-19,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Native American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+50-59,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Other,Midwest,PWID,Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,African-American,West,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Straight,Native American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Gay,Other,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Straight,Native American,South,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Female,Straight,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Female,Straight,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+13-19,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Straight,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+60+,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Bi,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Native American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Bi,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Intersex,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Intersex,Non-MSM,Other,Low
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Bi,Hispanic/Latinx,Northeast,PWID,Supressed,Cis Woman,Non-MSM,PWID,Medium
+60+,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,Northeast,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+13-19,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Male,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Straight,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Straight,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Native American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Trans Man,Non-MSM,HET,Low
+50-59,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Hispanic/Latinx,Midwest,PWID,Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Straight,Native American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Bi,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,Other,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Straight,Other,Midwest,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Female,Gay,Native American,Midwest,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+40-49,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+50-59,Male,Bi,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+13-19,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Trans Woman,MSM,MSM,High
+50-59,Female,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,African-American,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Male,Gay,Native American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+20-29,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Male,Straight,Native American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Bi,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Straight,Native American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+50-59,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Female,Bi,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+60+,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+50-59,Male,Gay,Native American,South,Non-PWID,Supressed,Trans Woman,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Native American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Straight,African-American,Midwest,PWID,Not Supressed,Cis Man,Non-MSM,PWID,High
+20-29,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Male,Straight,African-American,South,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Native American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Bi,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Gay,African-American,Northeast,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+50-59,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Other,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Straight,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Bi,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Straight,Native American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Straight,Native American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,Native American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,Hispanic/Latinx,Midwest,PWID,Supressed,Cis Man,Non-MSM,PWID,Medium
+20-29,Male,Bi,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+60+,Female,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+13-19,Male,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Other,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,African-American,Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Female,Gay,Hispanic/Latinx,Northeast,PWID,Not Supressed,Cis Woman,Non-MSM,PWID,High
+20-29,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Native American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+13-19,Female,Gay,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Male,Gay,Native American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Female,Gay,Native American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Male,Gay,Other,Midwest,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+50-59,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Straight,Hispanic/Latinx,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+40-49,Male,Bi,Other,Northeast,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Female,Gay,Hispanic/Latinx,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Intersex,Gay,African-American,West,Non-PWID,Supressed,Intersex,Non-MSM,Other,Low
+50-59,Male,Bi,Native American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+60+,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Straight,Asian-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+40-49,Male,Gay,African-American,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+30-39,Female,Bi,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Female,Gay,Other,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+40-49,Male,Gay,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Intersex,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Intersex,Non-MSM,Other,Low
+20-29,Male,Straight,African-American,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+20-29,Female,Straight,Other,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Gay,African-American,West,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Female,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Bi,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,African-American,South,PWID,Not Supressed,Cis Man,MSM,MSM,Very High
+30-39,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+20-29,Male,Gay,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Male,Gay,Other,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+60+,Female,Straight,African-American,Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+13-19,Female,Gay,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+20-29,Female,Straight,Hispanic/Latinx,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Female,Straight,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+50-59,Female,Straight,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+20-29,Male,Straight,African-American,South,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+30-39,Male,Gay,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Male,Gay,Native American,Midwest,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,African-American,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Female,Gay,African-American,West,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+13-19,Male,Gay,Hispanic/Latinx,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+13-19,Female,Bi,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Male,Straight,African-American,Northeast,Non-PWID,Not Supressed,Cis Man,Non-MSM,HET,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Male,Gay,Other,West,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Asian-American,Northeast,PWID,Supressed,Cis Man,MSM,MSM,High
+50-59,Male,Gay,African-American,Midwest,Non-PWID,Not Supressed,Trans Woman,MSM,MSM,High
+30-39,Female,Gay,Hispanic/Latinx,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+50-59,Female,Straight,African-American,Midwest,Non-PWID,Supressed,Cis Woman,Non-MSM,HET,Low
+40-49,Female,Gay,African-American,Northeast,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+40-49,Male,Gay,African-American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+50-59,Female,Gay,African-American,South,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
+20-29,Male,Gay,Native American,South,Non-PWID,Supressed,Cis Man,MSM,MSM,Medium
+20-29,Male,Gay,Hispanic/Latinx,South,Non-PWID,Not Supressed,Cis Man,MSM,MSM,High
+30-39,Female,Gay,African-American,South,Non-PWID,Supressed,Cis Woman,Non-MSM,Other,Low
+30-39,Female,Straight,African-American,West,Non-PWID,Not Supressed,Cis Woman,Non-MSM,HET,Medium
+30-39,Male,Straight,Hispanic/Latinx,Northeast,Non-PWID,Supressed,Cis Man,Non-MSM,HET,Low
+13-19,Female,Gay,Native American,Northeast,Non-PWID,Not Supressed,Cis Woman,Non-MSM,Other,Medium
