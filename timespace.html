@@ -115,24 +115,14 @@
     simulation.alpha(1).restart();
   }
 
+  var fillColor = {
+    'Not Infected': '#ffffff',
+    'Infected': '#1f78b4',
+    'Supressed': '#b2df8a'
+  };
+
   function colorBubbles(field){
-    var fillColor, values = [];
-    data.forEach(function(d){
-      if(values.indexOf(d[field]) == -1) values.push(d[field]);
-    });
-    values.sort(function(a, b){ return b > a });
-    fillColor = d3.scaleOrdinal()
-      .domain(values)
-      .range(['#ffffff', '#1f78b4', '#b2df8a']);
-    var titles = d3.select('#colors').selectAll('a').data(values);
-    titles.exit().remove();
-    titles.enter().append('a')
-      .attr('class', 'button')
-      .style('color', '#aaaaaa')
-      .merge(titles)
-      .text(function(d){ return d; })
-      .style('background', function(d){ return fillColor(d); });
-    bubbles.attr('fill', function(d){ return fillColor(d[field]); });
+    bubbles.attr('fill', function(d){ return fillColor[d[field]]; });
   }
 
   var intervalID;
@@ -145,7 +135,7 @@
         if(row['Infection Status'] == 'Not Infected'){
           row['Infection Status'] = 'Infected';
         } else if(row['Infection Status'] == 'Infected'){
-          row['Infection Status'] = 'Effectively Supressed';
+          row['Infection Status'] = 'Supressed';
         }
       });
       colorBubbles('Infection Status');
@@ -171,6 +161,15 @@
       $('#play').removeClass('active');
     });
   });
+
+  var titles = d3.select('#colors').selectAll('a').data(['Not Infected', 'Infected', 'Supressed']);
+  titles.exit().remove();
+  titles.enter().append('a')
+    .attr('class', 'button')
+    .style('color', '#aaaaaa')
+    .merge(titles)
+    .text(function(d){ return d; })
+    .style('background', function(d){ return fillColor[d]; });
 </script>
 </body>
 </html>
