@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HIV Infection Time-Space Expansion</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+  .container {
+    max-width: 940px;
+    margin: auto;
+  }
+  .button {
+    color: #444;
+    min-width: 130px;
+    padding: 4px 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+  }
+  .button.active {
+    background: #000;
+    color: #fff;
+  }
+  #vis {
+    width: 940px;
+    height: 550px;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  #colors {
+    text-align: right;
+    display: inline-block;
+    width:50%;
+  }
+  #play-controls{
+    display: inline-block;
+    width:50%;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="vis"></div>
+    <div id="play-controls"><a id="play" class="button active">Play</a><a id="stop" class="button">Stop</a></div><div id="colors"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script>
+  var width = 940;
+  var height = 550;
+  var center = { x: width / 2, y: height / 2 };
+  var cluster = [
+    { x: width / 4, y: height / 4 },
+    { x: 3 * width / 4, y: height / 4 },
+    { x: width / 4, y: 3 * height / 4 },
+    { x: 3 * width / 4, y: 3 * height / 4 }
+  ];
+  var n = 100;
+
+  var svg = d3.select('#vis')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  var data = Array(n);
+  for(var i = 0; i < n; i++){
+    data[i] = {
+      'Infection Status': Math.random() < 0.01 ? 'Infected' : 'Not Infected',
+      cluster: Math.floor(Math.random() * 3.1),
+      cx: 0,
+      cy: 0
+    }
+  }
+
+  var bubbles = svg.selectAll('circle').data(data)
+    .enter().append('circle')
+      .attr('r', 5)
+      .attr('stroke', '#000000')
+      .attr('stroke-width', 1)
+      .attr('fill', '#ffffff');
+
+  var forceStrength = 0.03;
+
+  var xForce = d3.forceX().strength(forceStrength);
+  var yForce = d3.forceY().strength(forceStrength);
+
+  var simulation = d3.forceSimulation().nodes(data)
+    .velocityDecay(0.2)
+    .force('x', xForce.x(center.x))
+    .force('y', yForce.y(center.y))
+    .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
+    .on('tick', function(){
+      bubbles
+        .attr('cx', function(d){return d.x})
+        .attr('cy', function(d){return d.y});
+    });
+
+  function groupBubbles(field){
+    var values = [];
+    data.forEach(function(d){
+      if(values.indexOf(d[field]) == -1) values.push(d[field]);
+    });
+    values.sort(function(a, b){ return b > a });
+    var ratio = width/(values.length + 1);
+    simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
+      return d['Infection Status'] === 'Not Infected' ? center.x: cluster[d.cluster].x;
+    }));
+    simulation.force('y', d3.forceY().strength(forceStrength).y(function(d){
+      return d['Infection Status'] === 'Not Infected' ? center.y: cluster[d.cluster].y;
+    }));
+    simulation.alpha(1).restart();
+  }
+
+  function colorBubbles(field){
+    var fillColor, values = [];
+    data.forEach(function(d){
+      if(values.indexOf(d[field]) == -1) values.push(d[field]);
+    });
+    values.sort(function(a, b){ return b > a });
+    fillColor = d3.scaleOrdinal()
+      .domain(values)
+      .range(['#ffffff', '#1f78b4', '#b2df8a']);
+    var titles = d3.select('#colors').selectAll('a').data(values);
+    titles.exit().remove();
+    titles.enter().append('a')
+      .attr('class', 'button')
+      .style('color', '#aaaaaa')
+      .merge(titles)
+      .text(function(d){ return d; })
+      .style('background', function(d){ return fillColor(d); });
+    bubbles.attr('fill', function(d){ return fillColor(d[field]); });
+  }
+
+  var intervalID;
+
+  function start(){
+    intervalID = setInterval(function(){
+      data.forEach(function(row){
+        var change = Math.random() < 0.01;
+        if(!change) return;
+        if(row['Infection Status'] == 'Not Infected'){
+          row['Infection Status'] = 'Infected';
+        } else if(row['Infection Status'] == 'Infected'){
+          row['Infection Status'] = 'Effectively Supressed';
+        }
+      });
+      colorBubbles('Infection Status');
+      groupBubbles('Infection Status');
+    }, 800);
+  }
+
+  function stop(){
+    clearInterval(intervalID);
+  }
+
+  start();
+
+  $(function(){
+    $('#play').click(function(){
+      start();
+      $(this).addClass('active');
+      $('#stop').removeClass('active');
+    });
+    $('#stop').click(function(){
+      stop();
+      $(this).addClass('active');
+      $('#play').removeClass('active');
+    });
+  });
+</script>
+</body>
+</html>
