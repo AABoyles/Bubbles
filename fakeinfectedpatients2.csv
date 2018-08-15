@@ -1,0 +1,1001 @@
+Age at Diagnosis,Sex at Birth,Race,Region,PWID,r,Gender,MSM,Transmission Category,y2015,y2016,y2017,y2018
+30-39,Male,African-American,South,Non-PWID,0.34062425373122096,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.5545569970272481,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Female,Other,South,Non-PWID,0.32422261452302337,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.8110683371778578,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Hispanic/Latinx,South,Non-PWID,0.5914395942818373,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.049874949967488647,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.005897953407838941,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,Other,South,Non-PWID,0.5439222231507301,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Other,West,Non-PWID,0.9034025345463306,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.28899210784584284,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.43313932279124856,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.1337794684804976,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.5738078211434186,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.09228354436345398,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.5684445055667311,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.7832830832339823,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Hispanic/Latinx,South,PWID,0.9159966825973243,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.590157282538712,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Native American,West,Non-PWID,0.40841780113987625,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+40-49,Female,African-American,Northeast,PWID,0.6568339909426868,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.6086701448075473,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.3167762099765241,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.15490018809214234,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.008030325639992952,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.6900400829035789,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,West,Non-PWID,0.5591404223814607,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+40-49,Female,African-American,Midwest,Non-PWID,0.29624733328819275,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,Native American,Midwest,Non-PWID,0.7215443265158683,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Native American,Northeast,Non-PWID,0.5194826221559197,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,West,Non-PWID,0.6806494479533285,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Other,South,Non-PWID,0.613838916644454,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Other,South,Non-PWID,0.3236781950108707,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.38262408529408276,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.5407520995941013,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.06882623233832419,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,African-American,South,PWID,0.07498214393854141,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.33717176830396056,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,West,Non-PWID,0.6785758906044066,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.4561540959402919,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.3137483682949096,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.767245383001864,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.2716101596597582,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.19676171406172216,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.0918139482382685,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.1861413144506514,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.09313938627019525,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.43277910887263715,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.7829592700581998,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Other,Midwest,Non-PWID,0.660952610662207,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,PWID,0.734126944327727,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.258397267665714,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.9608823654707521,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.06649738573469222,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.3175996853969991,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.47655240376479924,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.2506576038431376,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Native American,South,Non-PWID,0.31124339951202273,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+13-19,Male,Native American,South,Non-PWID,0.5538659770973027,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Native American,South,PWID,0.5009586964733899,Trans Woman,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.101986279245466,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.9116997874807566,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,PWID,0.5080448386725038,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.8773680820595473,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.738013215828687,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,Midwest,Non-PWID,0.06469058524817228,Trans Man,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,PWID,0.4514465394895524,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.5908979144878685,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Other,South,Non-PWID,0.31155481305904686,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,Native American,West,Non-PWID,0.11311820987612009,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Northeast,PWID,0.375481148250401,Trans Woman,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.04343042615801096,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.010532326763495803,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.16092778998427093,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Female,African-American,Northeast,Non-PWID,0.4854118980001658,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+13-19,Male,Native American,Northeast,Non-PWID,0.31353959371335804,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,PWID,0.7206468835938722,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.8048246782273054,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Other,South,Non-PWID,0.15241367695853114,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.9712722797412425,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.9184500144328922,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Asian-American,Midwest,Non-PWID,0.18018080829642713,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.808577373623848,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,Hispanic/Latinx,Northeast,Non-PWID,0.9052440146915615,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,West,PWID,0.741240220842883,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.14184687845408916,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.40103021427057683,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.23083907505497336,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.8817282568197697,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.6459252594504505,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.6734927138313651,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Other,Midwest,Non-PWID,0.4231562251225114,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Native American,West,PWID,0.9604194986168295,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.5499158094171435,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.45401279139332473,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.002701659221202135,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.791973547777161,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.11579202488064766,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.37339365971274674,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Other,Northeast,Non-PWID,0.022757039172574878,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.5498817171901464,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.531765412306413,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.2153011942282319,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.8791487687267363,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.8886152459308505,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.11854159832000732,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.07575929653830826,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.946674512932077,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.0010206971783190966,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.5565639794804156,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.9562095049768686,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,African-American,South,Non-PWID,0.2935945484787226,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Female,African-American,Northeast,Non-PWID,0.24210078525356948,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.12794676586054265,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.5181693241465837,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.3495655432343483,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.6785873370245099,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.516686279559508,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Female,African-American,Midwest,PWID,0.03591385274194181,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+30-39,Female,Other,South,Non-PWID,0.3454000009223819,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,PWID,0.7145412350073457,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.617992662359029,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.8404965095687658,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,African-American,Northeast,Non-PWID,0.07307608472183347,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.1861613232176751,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.484009558102116,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,Midwest,Non-PWID,0.8787575562018901,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,African-American,South,Non-PWID,0.8155759142246097,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.2718872430268675,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.5946061376016587,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.8324209868442267,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Hispanic/Latinx,West,Non-PWID,0.2598670350853354,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+13-19,Male,Native American,Northeast,Non-PWID,0.2226014737971127,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Other,South,Non-PWID,0.803418745752424,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.43170235911384225,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.30397667409852147,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.41884348960593343,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+13-19,Male,African-American,South,Non-PWID,0.6590474231634289,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.11397632607258856,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,West,Non-PWID,0.9004234715830535,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,Native American,South,Non-PWID,0.9565654681064188,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Female,Hispanic/Latinx,West,Non-PWID,0.5018096044659615,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.5079473343212157,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.9932432391215116,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.24144253507256508,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.8635281957685947,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.036596495658159256,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9079240062274039,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.5120626832358539,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.3152026867028326,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Other,Midwest,Non-PWID,0.12371279415674508,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,African-American,South,PWID,0.1116504913661629,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.2727091808337718,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.5954108273144811,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.07437100424431264,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.6575771970674396,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Other,Midwest,PWID,0.17128180991858244,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.35276651731692255,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.8797614944633096,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,Northeast,Non-PWID,0.9525885886978358,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.9196685042697936,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.7389294379390776,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Female,Hispanic/Latinx,Northeast,Non-PWID,0.37249842029996216,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.1355779452715069,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Other,Midwest,Non-PWID,0.46371710347011685,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.0868676567915827,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.3155860744882375,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.2049831966869533,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.32012783316895366,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.8775015450082719,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.815845642471686,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Female,Hispanic/Latinx,Midwest,Non-PWID,0.7149768499657512,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.7055343617685139,Trans Woman,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Native American,Midwest,Non-PWID,0.5832188134081662,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+13-19,Male,African-American,West,Non-PWID,0.7153083283919841,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Hispanic/Latinx,South,Non-PWID,0.8091160317417234,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.09804054629057646,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.021090797148644924,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.726245594676584,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,African-American,Midwest,Non-PWID,0.1605762441176921,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.2490487329196185,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,Northeast,Non-PWID,0.14823000435717404,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.949659755686298,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.4347141208127141,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.4820398495066911,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.11506622773595154,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.6425628876313567,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.0805988849606365,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.5959445734042674,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,7.573114708065987e-4,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+40-49,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.6199512840248644,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.2830009909812361,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Asian-American,Northeast,Non-PWID,0.9497194846626371,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,PWID,0.5458183663431555,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.7006835036445409,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.23032268253155053,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.8991945141460747,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,PWID,0.16654766956344247,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.8490258471574634,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.9660896705463529,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,West,Non-PWID,0.781107519287616,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.8428266819100827,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,Northeast,Non-PWID,0.6753116953186691,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.31788339652121067,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.03031416703015566,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.21143760881386697,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Asian-American,South,Non-PWID,0.755481191445142,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+13-19,Female,African-American,West,Non-PWID,0.6769627153407782,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+13-19,Female,African-American,South,Non-PWID,0.26004792656749487,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.2074344924185425,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6874494450166821,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.17673916718922555,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,0.44927463261410594,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+50-59,Female,Hispanic/Latinx,West,Non-PWID,0.4040759664494544,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Female,African-American,South,Non-PWID,0.02603231859393418,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,South,Non-PWID,0.20741165103390813,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.6168396351858974,Trans Woman,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.2787789795547724,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.10948255960829556,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.729983335826546,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.9998433873988688,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,African-American,West,Non-PWID,0.7808665460906923,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.20908014313317835,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,PWID,0.5169730435591191,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.7431242056190968,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.8098124675452709,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.200991356279701,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.05326650245115161,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.5230166972614825,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.7262615154031664,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,African-American,Midwest,Non-PWID,0.12995028775185347,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.885056575294584,Trans Woman,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.8401562643703073,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.7725999089889228,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.0951244835741818,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.5124051319435239,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,West,PWID,0.33836022741161287,Trans Woman,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+40-49,Male,Native American,West,Non-PWID,0.08090411499142647,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Hispanic/Latinx,West,Non-PWID,0.35596317797899246,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.554985691793263,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.8561281124129891,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Other,West,Non-PWID,0.2301073563285172,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.6967440021689981,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,West,Non-PWID,0.22342475038021803,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.0640499487053603,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Other,West,Non-PWID,0.2755991709418595,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.6010388627182692,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.6587971129920334,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.5745855825953186,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,South,Non-PWID,0.05084867659024894,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.8317995653487742,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.06277186004444957,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Native American,Midwest,Non-PWID,0.776826468994841,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.7779760498087853,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.15575914666987956,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Native American,Northeast,Non-PWID,0.8634803765453398,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Other,Midwest,Non-PWID,0.21093827253207564,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Female,Hispanic/Latinx,Midwest,Non-PWID,0.4191669730935246,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.9398354697041214,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Native American,Midwest,Non-PWID,0.8161331403534859,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Native American,South,Non-PWID,0.254596084356308,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Other,West,Non-PWID,0.5364581285975873,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.9433331745676696,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,Hispanic/Latinx,South,Non-PWID,0.7989713358692825,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Native American,West,Non-PWID,0.967023893725127,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.28714172751642764,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.22097266023047268,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,Midwest,Non-PWID,0.2774906533304602,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.7856021355837584,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.537224437808618,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.7312663635239005,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.4158136092592031,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.8258806925732642,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,Northeast,PWID,0.5431119387503713,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,Northeast,Non-PWID,0.41637363843619823,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Asian-American,Northeast,Non-PWID,0.12871662410907447,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,West,Non-PWID,0.38184554199688137,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,0.17221241374500096,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.5472646069247276,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,Hispanic/Latinx,Midwest,Non-PWID,0.35637450660578907,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.6384504425805062,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.2637949804775417,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,African-American,South,Non-PWID,0.09246286773122847,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,PWID,0.48176356055773795,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.7108716871589422,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.34809339907951653,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.4328845457639545,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.44978155638091266,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Female,Native American,Northeast,Non-PWID,0.8498642761260271,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,Midwest,Non-PWID,0.8132791086100042,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,South,Non-PWID,0.09214755287393928,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.41187780373729765,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Female,Native American,South,Non-PWID,0.6572733148932457,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,0.4365750988945365,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.3483882520813495,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.31513066589832306,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Native American,South,Non-PWID,0.9819046529009938,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Female,Hispanic/Latinx,Midwest,Non-PWID,0.07282880088314414,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.5905123511329293,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.673055250197649,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.38329575466923416,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.7095800761599094,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.9984873752109706,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.7576007938478142,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,Hispanic/Latinx,Northeast,Non-PWID,0.46012900583446026,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8711048676632345,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.5551750650629401,Trans Woman,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.33325731637887657,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.3717135014012456,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.7119406817946583,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.5324813760817051,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.11901392159052193,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.8402296828571707,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Native American,Northeast,Non-PWID,0.7027460446115583,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.8391302269883454,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.6903955598827451,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.17358593014068902,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,African-American,South,Non-PWID,0.45425663772039115,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.15394542878493667,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Native American,West,Non-PWID,0.18263156339526176,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.5738634676672518,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.11539330682717264,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.018355221254751086,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Native American,West,Non-PWID,0.5407517205458134,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Hispanic/Latinx,West,Non-PWID,0.39911076962016523,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.10704219131730497,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.5027966038323939,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.6911978188436478,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.19009119691327214,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.19544139271602035,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.5445958524942398,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.6105242653284222,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.6547217804472893,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.3653914388269186,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,South,Non-PWID,0.18190897582098842,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.7799883633852005,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Native American,Northeast,Non-PWID,0.5945807821117342,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.39673357899300754,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.3811242540832609,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,PWID,0.8586983468849212,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.7567110217642039,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.4197742498945445,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.7469667526893318,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.16544773615896702,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.7922722555231303,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Native American,South,Non-PWID,0.19681306183338165,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Female,Hispanic/Latinx,Northeast,Non-PWID,0.3289019512012601,Trans Man,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.630311886779964,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,Northeast,Non-PWID,0.13774176430888474,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,South,Non-PWID,0.4129070600029081,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,PWID,0.3702440061606467,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.25782875227741897,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,Northeast,PWID,0.21732381847687066,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.41376123507507145,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.302643483504653,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,PWID,0.5451408356893808,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6263109790161252,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Northeast,PWID,0.5478468560613692,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.22132691135630012,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.15229586977511644,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.18218990601599216,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,PWID,0.18230126681737602,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+50-59,Female,African-American,Northeast,Non-PWID,0.20844398229382932,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,PWID,0.568798677995801,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.13089164742268622,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),Midwest,PWID,0.38363266037777066,Cis Woman,Non-MSM,PWID,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.2414487728383392,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.1119877842720598,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,PWID,0.6840838110074401,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Other,Northeast,Non-PWID,0.4624210980255157,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,Midwest,Non-PWID,0.8742450224235654,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.03620007820427418,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.46933955349959433,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.7962218236643821,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Asian-American,South,Non-PWID,0.9114172409754246,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.61537090013735,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Native American,Northeast,Non-PWID,0.9254930063616484,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,Midwest,Non-PWID,0.5437044089194387,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.3280608248896897,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.834326570853591,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Asian-American,Midwest,Non-PWID,0.7213909607380629,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.515952960588038,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.298393985722214,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.7534381449222565,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8951866803690791,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Other,Northeast,Non-PWID,0.2278086629230529,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.9643533765338361,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.9606073969043791,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Female,African-American,Northeast,Non-PWID,0.4357703374698758,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.9592315051704645,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.8019172418862581,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,African-American,Midwest,Non-PWID,0.8337599728256464,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.6089243795722723,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.5657833148725331,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.2887699310667813,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.3153696609660983,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9699441564735025,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,West,Non-PWID,0.056509124115109444,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,PWID,0.2934396443888545,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.7860048327129334,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,Native American,Northeast,Non-PWID,0.417555620893836,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,PWID,0.410705090733245,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+50-59,Male,Native American,South,Non-PWID,0.6416886826045811,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),Northeast,PWID,0.6744255700614303,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.5973515938967466,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.9136617197655141,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.31586392503231764,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Midwest,Non-PWID,0.3694268208928406,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.11013006861321628,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.8458036028314382,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.725260536884889,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.30705753643997014,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.17899371986277401,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,African-American,Northeast,Non-PWID,0.39966515451669693,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,PWID,0.6916382678318769,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.11745147383771837,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.05292979278601706,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Asian-American,South,Non-PWID,0.6599064809270203,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.9013585068751127,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.8233155212365091,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,Hispanic/Latinx,Northeast,Non-PWID,0.9214746512006968,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,Northeast,PWID,0.03883495321497321,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Female,Native American,Northeast,Non-PWID,0.5488310961518437,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.7224101750180125,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8629287232179195,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.06100545241497457,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,Hispanic/Latinx,Midwest,PWID,0.06750672706402838,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Female,Hispanic/Latinx,West,Non-PWID,0.2935342963319272,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,Native American,Northeast,Non-PWID,0.34706378425471485,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.8766741855069995,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.08445556461811066,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.9437427974771708,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.2191118069458753,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,Non-PWID,0.48319578915834427,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.34124802984297276,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.7872005689423531,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.31738634570501745,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.20371681125834584,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Native American,West,Non-PWID,0.5640984491910785,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+13-19,Male,African-American,Midwest,Non-PWID,0.5955730425193906,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.876827935455367,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.9971868400461972,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,African-American,West,Non-PWID,0.7018304441589862,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,South,Non-PWID,0.8280245303176343,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.14935309253633022,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.29895560536533594,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.5225929955486208,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.5331765569280833,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.5482072657905519,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.8752383522223681,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.7920645570848137,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,PWID,0.270504032028839,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.025174410082399845,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.05930639640428126,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.20562964770942926,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.12000419409014285,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.4295226149260998,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.05887245642952621,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.9374463674612343,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.31338060391135514,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.621672386303544,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.7874528742395341,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Asian-American,West,Non-PWID,0.2520621735602617,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.3144870321266353,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8394252462312579,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.3398053436540067,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.10810907813720405,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,African-American,Midwest,Non-PWID,0.13101040432229638,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Other,West,Non-PWID,0.6394799591507763,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.9362666069064289,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,0.19287585048004985,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.8610244386363775,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.38513079448603094,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.10679620131850243,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.5865397837478667,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.9094273543450981,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.25205155136063695,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.22355986363254488,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Native American,Midwest,Non-PWID,0.11116770911030471,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.46462990320287645,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.388345466228202,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.7682199992705137,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.94808534742333,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.4951852348167449,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.15905978716909885,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.025940275518223643,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.1374630150385201,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.7761714973021299,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.20680705597624183,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.8900677517522126,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Other,Midwest,Non-PWID,0.3047523701097816,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.5380739336833358,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.7201267979107797,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Other,Northeast,Non-PWID,0.5392509798984975,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.469518372323364,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.87055319850333035,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.05783855519257486,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Other,West,PWID,0.49766803393140435,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,PWID,0.21477542561478913,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.942746814340353,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Native American,West,Non-PWID,0.3615525627974421,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+40-49,Female,Other,South,Non-PWID,0.363964602118358,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.23893953044898808,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.683872991707176,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.04750520922243595,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.3508410251233727,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.44385221833363175,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Other,South,Non-PWID,0.36949284351430833,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.234027344500646,Trans Woman,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.5558383965399116,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.46180334594100714,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,South,Non-PWID,0.40916659543290734,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,Other,West,Non-PWID,0.7122060572728515,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,PWID,0.4129969652276486,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.7898908704519272,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.10565421264618635,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.7610980975441635,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.2413142875302583,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Other,West,Non-PWID,0.2983307789545506,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Native American,South,Non-PWID,0.7495287333149463,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.13817960186861455,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.2126283822581172,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,West,Non-PWID,0.4159027871210128,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.6139923674054444,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.7997535758186132,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Native American,West,Non-PWID,0.7775064590387046,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.08621560665778816,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.32143124332651496,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.4043119209818542,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.4865540433675051,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.20366965304128826,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.7570487495977432,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.9733669238630682,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.7390749352052808,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.5627912960480899,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.0017917808145284653,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.670290281297639,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6577114011161029,Trans Woman,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.20717661641538143,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.15010971971787512,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.9900739761069417,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.20830921875312924,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.5816628774628043,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.8440032268408686,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.7375445580109954,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.4884153970051557,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Female,Hispanic/Latinx,Northeast,Non-PWID,0.6791758071631193,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.7374733712058514,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Hispanic/Latinx,Northeast,Non-PWID,0.055249417666345835,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.2638133226428181,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Midwest,Non-PWID,0.19497459242120385,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,South,Non-PWID,0.09522049152292311,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.06409647897817194,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,PWID,0.17427953495644033,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.47842015232890844,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8807213811669499,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.026451388839632273,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.858984392369166,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Hispanic/Latinx,Northeast,Non-PWID,0.2704779466148466,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.8785612457431853,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.23166039190255105,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Native American,West,Non-PWID,0.5620598082896322,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Native American,South,Non-PWID,0.815970555646345,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Hispanic/Latinx,Midwest,Non-PWID,0.976554692722857,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,Other,Northeast,Non-PWID,0.11321014096029103,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Midwest,Non-PWID,0.7245974198449403,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.20548270526342094,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.5212153866887093,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.2405805306043476,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,West,Non-PWID,0.3381529513280839,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.18237834121100605,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.7785161137580872,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Hispanic/Latinx,West,Non-PWID,0.9698722567409277,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+50-59,Female,African-American,South,Non-PWID,0.49480902310460806,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.9946376692969352,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.5949480049312115,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.70690658967942,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.5219302754849195,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,South,Non-PWID,0.11952672759070992,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.3594427746720612,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.6008816040121019,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.3519331372808665,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.11125053837895393,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.7466083592735231,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.12190945446491241,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Native American,West,Non-PWID,0.41602023085579276,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.3755821993108839,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.6183605366386473,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.0766634929459542,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Native American,West,Non-PWID,0.32763955066911876,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.9350599613972008,Trans Woman,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.5379976979456842,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.2135670892894268,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.6088692541234195,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.8185992601793259,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.09110392211005092,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.2949322834610939,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.8761685322970152,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,PWID,0.345161703415215,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.09131051530130208,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,South,Non-PWID,0.6885106842964888,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Other,Midwest,Non-PWID,0.5049452362582088,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.7120277329813689,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.6911258476320654,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.4497955141123384,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.33966936939395964,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.42457257118076086,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.8762028119526803,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.434111999347806,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.47668290114961565,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,Midwest,Non-PWID,0.6855062544345856,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,West,PWID,0.04810802289284766,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8377926698885858,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.9636907009407878,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.08708371547982097,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Native American,South,Non-PWID,0.9958319743163884,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Female,Other,West,Non-PWID,0.12404541135765612,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Female,Hispanic/Latinx,South,Non-PWID,0.975672148168087,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,South,Non-PWID,0.671079192077741,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6409447339829057,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.861962917027995,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.8626684136688709,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.03756373189389706,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,West,PWID,0.9629249663557857,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.020242821192368865,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,Other,Midwest,Non-PWID,0.3028409848921001,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.44095785287208855,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.38645271793939173,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.748652808368206,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Female,Hispanic/Latinx,West,PWID,0.9684947426430881,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Not Infected,Not Infected
+60+,Male,African-American,Northeast,Non-PWID,0.7394524016417563,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.5262466580606997,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.19122095964848995,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,Northeast,PWID,0.18521665525622666,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+30-39,Female,African-American,Northeast,Non-PWID,0.7193907864857465,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Other,Midwest,Non-PWID,0.1585633959621191,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.6549136664252728,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.8108065817505121,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Hispanic/Latinx,Northeast,Non-PWID,0.29470085888169706,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.6358390387613326,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,African-American,Northeast,Non-PWID,0.44708166806958616,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.7034440138377249,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Other,West,Non-PWID,0.6011357619427145,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+13-19,Male,African-American,Northeast,Non-PWID,0.2967443682719022,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.5305583367589861,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.5898637403734028,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.4784060681704432,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,Other,West,Non-PWID,0.7655810890719295,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.20314584951847792,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,PWID,0.35401757969520986,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.043887900887057185,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.3502024475019425,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.3439168930053711,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.3821984804235399,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.1544367391616106,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.17003271728754044,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.8635623741429299,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,African-American,Midwest,Non-PWID,0.5586947668343782,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.1465057278983295,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.8516820778604597,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.6269092622678727,Trans Woman,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,South,Non-PWID,0.903637213865295,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Native American,South,Non-PWID,0.23586408700793982,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.9894541567191482,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,Other,Northeast,Non-PWID,0.3433679223526269,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.3514790968038142,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.8456355608068407,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,Hispanic/Latinx,Midwest,Non-PWID,0.6407283819280565,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+60+,Female,Other,South,Non-PWID,0.8236252435017377,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.26263472018763423,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.5631914290133864,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.738265770021826,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.02887688623741269,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,West,Non-PWID,0.6050911282654852,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,PWID,0.7937559629790485,Trans Woman,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.7191901311744004,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6256249553989619,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Other,South,PWID,0.11464468692429364,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.37398621696047485,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.27480351249687374,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.08329066750593483,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.6710064383223653,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.4553392482921481,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,West,Non-PWID,0.3449178612791002,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.8182857458014041,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.9918744713068008,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.8799528314266354,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.007183557376265526,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,Non-PWID,0.2676678216084838,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.614117864985019,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.7752789075020701,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.5649838873650879,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.07098867534659803,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.12013445049524307,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,African-American,Midwest,PWID,0.8880821070633829,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.6547309302259237,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,PWID,0.9717599153518677,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Female,African-American,West,Non-PWID,0.08667100826278329,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.49537126277573407,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Female,Other,South,Non-PWID,0.7460934007540345,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.19562812824733555,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,PWID,0.900175470393151,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.9227358782663941,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.8204113829415292,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.4718555819708854,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.1518097366206348,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.5198867374565452,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.7378904211800545,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,Northeast,PWID,0.9069659046363086,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Hispanic/Latinx,West,PWID,0.2669649454765022,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,Other,South,PWID,0.5483720852062106,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.6847992145922035,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,Northeast,Non-PWID,0.9977916495408863,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Other,West,Non-PWID,0.40004712296649814,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,Hispanic/Latinx,South,Non-PWID,0.707593560218811,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,West,Non-PWID,0.9190169295761734,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.012248002691194415,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,PWID,0.307496125344187,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.48131214268505573,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.5041944517288357,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.9190653068944812,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.6540416500065476,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.9779044382739812,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,Other,Midwest,Non-PWID,0.25441984296776354,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.7325641650240868,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8927444855216891,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Native American,Midwest,Non-PWID,0.22994729108177125,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.7519038962200284,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,PWID,0.5146495713852346,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.4006420720834285,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9333192852791399,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.5415215473622084,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Native American,West,PWID,0.08571601891890168,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.5822055966127664,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,South,Non-PWID,0.48395117255859077,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.31257454096339643,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.13600278715603054,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.5114849535748363,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.9960223578382283,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Female,Native American,South,Non-PWID,0.832743696635589,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Other,South,Non-PWID,0.7331978029105812,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.9893407542258501,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,Hispanic/Latinx,South,Non-PWID,0.15013213059864938,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Other,West,Non-PWID,0.679629186866805,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.06466522999107838,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,African-American,West,Non-PWID,0.6683222432620823,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+13-19,Male,African-American,Midwest,Non-PWID,0.44249240355566144,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Female,Other,West,Non-PWID,0.05294640990905464,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.11144964210689068,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,PWID,0.7326933245640248,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.2792817344889045,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Female,African-American,Midwest,Non-PWID,0.7584144102875143,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.05734380427747965,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.6994366308208555,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,South,Non-PWID,0.49227367993444204,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,West,PWID,0.07024760125204921,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+50-59,Male,African-American,Midwest,PWID,0.17114965803921223,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Female,Native American,South,Non-PWID,0.4907585473265499,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Female,Other,Northeast,Non-PWID,0.056491171941161156,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,PWID,0.04764572181738913,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.16309621999971569,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.4041169988922775,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.10262663755565882,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Male,African-American,Midwest,PWID,0.8873186749406159,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Other,Midwest,Non-PWID,0.301824297523126,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9778561359271407,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.29253671993501484,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.8473688014782965,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.40727400151081383,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.9824457853101194,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.6426998239476234,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Female,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.07063383562490344,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.8619076418690383,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Native American,Northeast,Non-PWID,0.35856358194723725,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.5723995708394796,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Native American,West,Non-PWID,0.15007678419351578,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,Northeast,PWID,0.021487150574102998,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.30435028695501387,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+13-19,Female,African-American,Midwest,Non-PWID,0.3917379747144878,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.5325868842191994,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,West,Non-PWID,0.877596463309601,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,Northeast,Non-PWID,0.6123281554318964,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.6454219652805477,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9532889833208174,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,West,Non-PWID,0.12226534308865666,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Other,South,Non-PWID,0.44710863498039544,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+13-19,Male,African-American,Midwest,Non-PWID,0.6018223369028419,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.22247759019955993,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Other,Northeast,Non-PWID,0.24279177375137806,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.571978980442509,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Native American,South,Non-PWID,0.9256828662473708,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.8077234129887074,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Other,West,Non-PWID,0.530790874036029,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Female,Asian-American,Midwest,Non-PWID,0.22097631613723934,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Female,African-American,West,Non-PWID,0.7233428130857646,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.6013652374967933,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Other,Northeast,Non-PWID,0.23076859558932483,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8274105046875775,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,Hispanic/Latinx,West,Non-PWID,0.6627401642035693,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.3988134004175663,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.1764883971773088,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Other,South,Non-PWID,0.6455618781037629,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Native American,South,Non-PWID,0.5515959651675075,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.49921631859615445,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Female,African-American,Midwest,Non-PWID,0.9173942024353892,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,PWID,0.5585911509115249,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.4509018477983773,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,South,Non-PWID,0.14390790765173733,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,West,Non-PWID,0.3408133143093437,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.25794678274542093,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.2522242956329137,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Other,South,PWID,0.1568666819948703,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+30-39,Female,Other,South,Non-PWID,0.918381490977481,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Native American,West,PWID,0.19027761206962168,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.34960132115520537,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,West,PWID,0.9584246627055109,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Not Infected,Not Infected
+50-59,Male,Native American,South,Non-PWID,0.4815015804488212,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.8752415766939521,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.8843598694074899,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.5639514643698931,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+60+,Male,Other,West,Non-PWID,0.9563652714714408,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,South,Non-PWID,0.49632819439284503,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,Hispanic/Latinx,West,Non-PWID,0.36510733095929027,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Native American,Midwest,Non-PWID,0.04344357387162745,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+60+,Female,Hispanic/Latinx,Northeast,Non-PWID,0.6224844381213188,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Native American,Northeast,PWID,0.2693879073485732,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.488012061920017,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Native American,South,Non-PWID,0.7604910042136908,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.2951782054733485,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.9303070579189807,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.24760670633986592,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.7242321916855872,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.9107585612218827,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.16880336590111256,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.08185228728689253,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,African-American,South,Non-PWID,0.20815154653973877,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+13-19,Female,Other,Northeast,Non-PWID,0.9028165182098746,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6367100549396127,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.6363793436903507,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.847415026044473,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.8476022558752447,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Male,Native American,Northeast,Non-PWID,0.41399987880140543,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.09562797076068819,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Midwest,Non-PWID,0.7339637824334204,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.27066579018719494,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,South,PWID,0.3542283312417567,Cis Woman,Non-MSM,PWID,Not Infected,Infected,Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.7213196547236294,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.9389643557369709,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Hispanic/Latinx,Midwest,Non-PWID,0.6446163123473525,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Other,West,Non-PWID,0.7611769651994109,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.482852018205449,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,Midwest,Non-PWID,0.07423666771501303,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Other,Northeast,Non-PWID,0.36002757400274277,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+60+,Male,Native American,West,PWID,0.3839968964457512,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+20-29,Male,Native American,West,Non-PWID,0.13405471644364297,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,Non-PWID,0.8722494966350496,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,Other,South,Non-PWID,0.6782712251879275,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.11503898492082953,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,West,Non-PWID,0.9697436119895428,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Female,African-American,South,Non-PWID,0.1837306753732264,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.6937934956513345,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.789283255347982,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+50-59,Female,African-American,South,Non-PWID,0.9478759292978793,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.9037328197155148,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Female,Native American,Midwest,Non-PWID,0.6131462317425758,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.3727641673758626,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.03428816166706383,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,Non-PWID,0.8285123873502016,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,Native American,Northeast,Non-PWID,0.45087385457009077,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.6857641355600208,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.895773759810254,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.5875940867699683,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Native American,Northeast,Non-PWID,0.2277008155360818,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.14162856992334127,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.2365347493905574,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6847463974263519,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+50-59,Female,Hispanic/Latinx,West,Non-PWID,0.5743434254545718,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.23108815238811076,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Native American,Northeast,Non-PWID,0.9399106856435537,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,Northeast,Non-PWID,0.41906177438795567,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,West,PWID,0.5062668845057487,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.7358761129435152,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.6087319918442518,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Other,West,Non-PWID,0.06220405572094023,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,African-American,Northeast,PWID,0.04015539772808552,Cis Woman,Non-MSM,PWID,Infected,Infected,Infected,Infected
+50-59,Female,African-American,South,Non-PWID,0.0809705350548029,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.6404698407277465,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,South,Non-PWID,0.8909479936119169,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.1704128293786198,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),West,Non-PWID,0.08420871803537011,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,African-American,West,Non-PWID,0.5085404505953193,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.3381457566283643,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.6651261213701218,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.19506656634621322,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.16422205697745085,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,Hispanic/Latinx,Northeast,Non-PWID,0.23462364822626114,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+13-19,Male,Native American,South,Non-PWID,0.021632657619193196,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.1104434272274375,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Female,Native American,Northeast,Non-PWID,0.676944536389783,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.9859272320754826,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,Native American,South,Non-PWID,0.05773634510114789,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Female,Hispanic/Latinx,West,Non-PWID,0.30046024918556213,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.8891856458503753,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.1947223348543048,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.9580054364632815,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Midwest,PWID,0.9182071152608842,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,West,PWID,0.5585129281971604,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+50-59,Female,African-American,West,Non-PWID,0.29489844222553074,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.516255899798125,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Asian-American,West,Non-PWID,0.6799333607777953,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.40846053045243025,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),South,Non-PWID,0.6101924686226994,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.7878328107763082,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.6046468359418213,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.8962645640131086,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,PWID,0.5279894506093115,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.2824104377068579,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.1295212940312922,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.18816308141686022,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,West,PWID,0.11322952690534294,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Female,African-American,West,Non-PWID,0.7850387080106884,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,South,Non-PWID,0.12332778656855226,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Midwest,Non-PWID,0.6912077681627125,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.38836601306684315,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,West,PWID,0.9313799447845668,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.9336356085259467,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,Northeast,Non-PWID,0.5256925423163921,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Male,Native American,South,Non-PWID,0.7444595585111529,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,Midwest,PWID,0.6017643946688622,Cis Woman,Non-MSM,PWID,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Native American,West,Non-PWID,0.036198843037709594,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,South,Non-PWID,0.6673171129077673,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.6392705533653498,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.5578233893029392,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+30-39,Male,African-American,Northeast,Non-PWID,0.5371334536466748,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Midwest,Non-PWID,0.3252253527753055,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.22218373487703502,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Asian-American,South,Non-PWID,0.3216764866374433,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.10507594584487379,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,PWID,0.9833435718901455,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Not Infected,Not Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.5213776300661266,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.9275451537687331,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Midwest,PWID,0.37761743855662644,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.8504822996910661,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,South,Non-PWID,0.8762000966817141,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.9960696243215352,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Not Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.30143562355078757,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.05361505853943527,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Male,African-American,West,Non-PWID,0.11079257074743509,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Other,Midwest,PWID,0.35583096742630005,Cis Man,MSM,MSM-IDU,Not Infected,Infected,Infected,Infected
+50-59,Male,African-American,Northeast,Non-PWID,0.747419580584392,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.804871229454875,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,African-American,West,Non-PWID,0.6775532553438097,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,Hispanic/Latinx,Northeast,Non-PWID,0.23696633498184383,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Northeast,PWID,0.22932002134621143,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.8031200524419546,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Midwest,PWID,0.5986221502535045,Cis Man,MSM,MSM-IDU,Not Infected,Not Infected,Infected,Infected
+40-49,Female,Hispanic/Latinx,West,Non-PWID,0.9301261459477246,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.5624497677199543,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.14477089187130332,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.7097401428036392,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,West,Non-PWID,0.4771099400240928,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+13-19,Male,Hispanic/Latinx,Midwest,Non-PWID,0.18098146887496114,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Native American,West,Non-PWID,0.2551475861109793,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,Native American,Midwest,Non-PWID,0.3475944544188678,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.7274660896509886,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,Native American,South,Non-PWID,0.7146345279179513,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,African-American,Northeast,Non-PWID,0.12412825832143426,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+30-39,Male,African-American,South,Non-PWID,0.6465303206350654,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,African-American,Midwest,Non-PWID,0.3996242245193571,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.9155208109878004,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.7641890514642,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,Hispanic/Latinx,Midwest,Non-PWID,0.37150386860594153,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+40-49,Male,African-American,Northeast,Non-PWID,0.36595307593233883,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+30-39,Male,Native American,West,Non-PWID,0.5946844182908535,Trans Woman,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.06742286402732134,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Male,African-American,Midwest,Non-PWID,0.5642120339907706,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Male,Hispanic/Latinx,Northeast,Non-PWID,0.5608409682754427,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+40-49,Female,African-American,South,Non-PWID,0.21876546740531921,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.8073234700132161,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Native American,South,Non-PWID,0.9414538606069982,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,Native American,Northeast,Non-PWID,0.28990579629316926,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+20-29,Male,Hispanic/Latinx,South,Non-PWID,0.9178077613469213,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Female,Hispanic/Latinx,South,Non-PWID,0.13631782960146666,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+30-39,Male,African-American,Midwest,Non-PWID,0.0024168011732399464,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+40-49,Female,African-American,Midwest,Non-PWID,0.7691062369849533,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+20-29,Male,Hispanic/Latinx,Northeast,Non-PWID,0.8763073778245598,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Female,African-American,South,Non-PWID,0.36571932886727154,Cis Woman,Non-MSM,HET,Not Infected,Infected,Infected,Infected
+20-29,Female,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.9023764547891915,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Caucasian (Non-Hispanic/Latinx),Northeast,Non-PWID,0.9205654764082283,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+60+,Male,African-American,West,Non-PWID,0.4843936839606613,Cis Man,MSM,MSM,Not Infected,Infected,Infected,Infected
+20-29,Male,Other,Midwest,Non-PWID,0.13631976582109928,Cis Man,MSM,MSM,Infected,Infected,Infected,Infected
+20-29,Female,African-American,South,Non-PWID,0.5891334712505341,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+30-39,Female,African-American,West,Non-PWID,0.22047482687048614,Cis Woman,Non-MSM,HET,Infected,Infected,Infected,Infected
+50-59,Male,Caucasian (Non-Hispanic/Latinx),Midwest,Non-PWID,0.6991873553488404,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+50-59,Male,African-American,South,Non-PWID,0.5448167703580111,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Female,Other,Northeast,Non-PWID,0.5288381520658731,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+40-49,Female,African-American,South,Non-PWID,0.6013260658364743,Cis Woman,Non-MSM,HET,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.7145078333560377,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+30-39,Male,Hispanic/Latinx,South,Non-PWID,0.6982587340753525,Cis Man,MSM,MSM,Not Infected,Not Infected,Infected,Infected
+20-29,Male,African-American,West,Non-PWID,0.9229273970704526,Cis Man,MSM,MSM,Not Infected,Not Infected,Not Infected,Infected
+13-19,Male,African-American,Northeast,PWID,0.032147219171747565,Cis Man,MSM,MSM-IDU,Infected,Infected,Infected,Infected

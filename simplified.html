@@ -1,0 +1,165 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>HIV Infection Groupings</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/reset.css">
+  <style>
+  .container {
+    max-width: 940px;
+    margin: auto;
+  }
+  .button {
+    color: #444;
+    min-width: 130px;
+    padding: 4px 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+    text-decoration: none;
+  }
+  .button.active {
+    background: #000;
+    color: #fff;
+  }
+  #vis {
+    width: 940px;
+    height: 550px;
+    clear: both;
+    margin-bottom: 10px;
+  }
+  #colors {
+    text-align: right;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="vis"></div>
+    <div id="colors"></div>
+    <div id="group-toolbar">Group By:<br /></div>
+    <div id="color-toolbar">Color By:<br /></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script>
+  var width = 940;
+  var height = 550;
+  var center = { x: width / 2, y: height / 2 };
+
+  var svg = d3.select('#vis')
+    .append('svg')
+    .attr('width', width)
+    .attr('height', height);
+
+  var data = [];
+
+  $.get('fakeinfectedpatients2.csv', function(ret){
+    data = d3.csvParse(ret);
+
+    var bubbles = svg.selectAll('circle').data(data)
+      .enter().append('circle')
+        .attr('r', 5)
+        .attr('stroke', '#000000')
+        .attr('stroke-width', 1);
+
+    var forceStrength = 0.03;
+
+    var simulation = d3.forceSimulation().nodes(data)
+      .velocityDecay(0.2)
+      .force('x', d3.forceX().strength(forceStrength).x(center.x))
+      .force('y', d3.forceY().strength(forceStrength).y(center.y))
+      .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
+      .on('tick', function(){
+        bubbles
+          .attr('cx', function(d){return d.x})
+          .attr('cy', function(d){return d.y});
+      });
+
+    function groupBubbles(field){
+      if(field === 'None'){
+        svg.selectAll('.title').remove();
+        simulation.force('x', d3.forceX().strength(forceStrength).x(center.x));
+        simulation.alpha(1).restart();
+        return;
+      }
+      var values = [];
+      data.forEach(function(d){
+        if(values.indexOf(d[field]) == -1) values.push(d[field]);
+      });
+      values.sort();
+      var ratio = width/(values.length + 1);
+      var titles = svg.selectAll('.title').data(values);
+      titles.exit().remove();
+      titles.enter().append('text')
+        .attr('class', 'title')
+        .attr('y', 40)
+        .attr('text-anchor', 'middle')
+        .merge(titles)
+        .transition()
+        .text(function(d){ return d })
+        .attr('x', function(d){ return ratio * values.indexOf(d) + ratio });
+      simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
+        return ratio * values.indexOf(d[field]) + ratio;
+      }));
+      simulation.alpha(1).restart();
+    }
+
+    groupBubbles('None');
+
+    d3.select('#group-toolbar').selectAll('a')
+      .data(['None'].concat(data.columns)).enter().append('a')
+      .classed('button', true)
+      .classed('active', function(d){ return d === 'None'})
+      .text(function(d){ return d; })
+      .on('click', function(){
+        var button = d3.select(d3.event.target);
+        d3.select('#group-toolbar').selectAll('.button').classed('active', false);
+        button.classed('active', true);
+        groupBubbles(button.text());
+      });
+
+    function colorBubbles(field){
+      if(field === 'None'){
+        bubbles.attr('fill', d3.schemeCategory10[0]);
+        d3.select('#colors').selectAll('a').remove();
+        return;
+      }
+      var fillColor, values = [];
+      data.forEach(function(d){
+        if(values.indexOf(d[field]) == -1) values.push(d[field]);
+      });
+      values.sort();
+      fillColor = d3.scaleOrdinal()
+        .domain(values)
+        .range(d3.schemeCategory10.slice(0, values.length));
+      var colors = d3.select('#colors').selectAll('a').data(values);
+      colors.exit().remove();
+      colors.enter().append('a').classed('button', true).merge(colors)
+        .text(function(value){ return value; })
+        .style('background', function(value){ return(fillColor(value)) });
+      bubbles.transition()
+        .attr('fill', function(d){ return fillColor(d[field]); });
+    }
+
+    colorBubbles('Gender');
+
+    d3.select('#color-toolbar').selectAll('a')
+      .data(['None'].concat(data.columns)).enter().append('a')
+      .classed('button', true)
+      .classed('active', function(d){ return d === 'Gender'})
+      .text(function(d){ return d; })
+      .on('click', function(){
+        var button = d3.select(d3.event.target);
+        d3.select('#color-toolbar').selectAll('.button').classed('active', false);
+        button.classed('active', true);
+        colorBubbles(button.text());
+      });
+  });
+
+</script>
+</body>
+</html>
