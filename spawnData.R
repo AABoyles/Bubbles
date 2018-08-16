@@ -22,9 +22,9 @@ patients %>%
       ifelse(MSM == 'MSM' & PWID == 'PWID', 'Gay and Bisexual Men who Inject Drugs',
       ifelse(MSM == 'MSM', 'Gay, Bisexual, and other MSM',
       ifelse(PWID == 'PWID', 'People who Inject Drugs',
-      ifelse(runif(n()) > .1, 'Heterosexual', 'Other')))
+      ifelse(runif(n()) > .01, 'Heterosexual', 'Other')))
     ),
-    Year = sample(c("0Prior to 2015 or Not In County", 2015, 2016, 2017, 2018), n, TRUE, c(n-30, 4, 6, 3, 20)),
+    Year = sample(c("2014 or Prior", 2015, 2016, 2017, 2018), n, TRUE, c(n-30, 4, 6, 3, 20)),
     Cluster = sample(c('A', 'B', 'C', 'D', 'E', 'Not in a Growing Cluster'), n, TRUE, c(21, 17, 13, 9, 5, n-65))
   ) %>%
   select(`Age at Diagnosis`, `Sex at Birth`, Gender, `Race/Ethnicity`, Region, `Transmission Category`, Year, Cluster) -> patients
