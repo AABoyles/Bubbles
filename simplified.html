@@ -24,6 +24,9 @@
     background: #000;
     color: #fff;
   }
+  body, a.button{
+    font-size: 24px;
+  }
   #vis {
     width: 1240px;
     height: 550px;
@@ -72,12 +75,25 @@
       .velocityDecay(0.2)
       .force('x', d3.forceX().strength(forceStrength).x(center.x))
       .force('y', d3.forceY().strength(forceStrength).y(center.y))
-      .force('charge', d3.forceManyBody().strength(function(d){ return -50 * forceStrength }))
+      .force('charge', d3.forceManyBody().strength(function(d){ return -40 * forceStrength }))
       .on('tick', function(){
         bubbles
           .attr('cx', function(d){return d.x})
           .attr('cy', function(d){return d.y});
       });
+
+    function getTitles(field){
+      var values = [];
+      if(field == 'Gender'){
+        values = ['Cis Woman', 'Cis Man', 'Trans Woman', 'Trans Man'];
+      } else {
+        data.forEach(function(d){
+          if(values.indexOf(d[field]) === -1 && d[field] !== '') values.push(d[field]);
+        });
+        values.sort();
+      }
+      return values;
+    }
 
     function groupBubbles(field){
       if(field === 'None'){
@@ -86,26 +102,34 @@
         simulation.alpha(1).restart();
         return;
       }
-      var values = [];
-      data.forEach(function(d){
-        if(values.indexOf(d[field]) == -1) values.push(d[field]);
-      });
-      values.sort();
+      var values = getTitles(field);
       var ratio = width/(values.length + 1);
       var titles = svg.selectAll('.title').data(values);
       titles.exit().remove();
       titles.enter().append('text')
         .attr('class', 'title')
-        .attr('y', 40)
+        .attr('y', function(d, i){ return i % 2 === 0 ? 25 : 55})
         .attr('text-anchor', 'middle')
         .merge(titles)
         .transition()
         .text(function(d){ return d })
         .attr('x', function(d){ return ratio * values.indexOf(d) + ratio });
       simulation.force('x', d3.forceX().strength(forceStrength).x(function(d){
+        if(d[field] == '') return -500
         return ratio * values.indexOf(d[field]) + ratio;
       }));
       simulation.alpha(1).restart();
+      setTimeout(function(){
+        svg.selectAll('.title').data(values).transition().attr('x', function(d){
+          var i = 0, sum = 0;
+          data.forEach(function(point){
+            if(point[field] !== d) return;
+            i++;
+            sum += point.x;
+          });
+          return sum/i;
+        });
+      }, 1200);
     }
 
     groupBubbles('None');
@@ -128,11 +152,7 @@
         d3.select('#colors').selectAll('a').remove();
         return;
       }
-      var fillColor, values = [];
-      data.forEach(function(d){
-        if(values.indexOf(d[field]) == -1) values.push(d[field]);
-      });
-      values.sort();
+      var fillColor, values = getTitles(field);
       fillColor = d3.scaleOrdinal()
         .domain(values)
         .range(d3.schemeCategory10.slice(0, values.length));
@@ -145,12 +165,12 @@
         .attr('fill', function(d){ return fillColor(d[field]); });
     }
 
-    colorBubbles('Gender');
+    colorBubbles('None');
 
     d3.select('#color-toolbar').selectAll('a')
       .data(['None'].concat(data.columns)).enter().append('a')
       .classed('button', true)
-      .classed('active', function(d){ return d === 'Gender'})
+      .classed('active', function(d){ return d === 'None'})
       .text(function(d){ return d; })
       .on('click', function(){
         var button = d3.select(d3.event.target);
