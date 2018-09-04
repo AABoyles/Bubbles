@@ -6,9 +6,15 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/reset.css">
   <style>
+  body{
+    font-family: Helvetica;
+  }
   .container {
     max-width: 920px;
     margin: auto;
+  }
+  .title{
+    font-size: 20px;
   }
   .button {
     color: #444;
@@ -16,16 +22,12 @@
     padding: 4px 5px;
     cursor: pointer;
     text-align: center;
-    font-size: 13px;
     border: 1px solid #e0e0e0;
     text-decoration: none;
   }
   .button.active {
     background: #000;
     color: #fff;
-  }
-  body, a.button{
-    font-size: 24px;
   }
   #vis {
     width: 920px;
@@ -34,7 +36,16 @@
     margin-bottom: 10px;
   }
   #colors {
+    margin: 5px 0;
+    height: 16px;
     text-align: right;
+  }
+  #group-toolbar, #color-toolbar{
+    padding:5px 0;
+    font-size: 10px;
+  }
+  .mono{
+    font-family: monospace;
   }
   </style>
 </head>
@@ -42,16 +53,16 @@
   <div class="container">
     <div id="vis"></div>
     <div id="colors"></div>
-    <div id="group-toolbar">Group By:<br /></div>
-    <div id="color-toolbar">Color By:<br /></div>
+    <div id="group-toolbar"><span class="mono">Group By:</span></div>
+    <div id="color-toolbar"><span class="mono">Color By:</span></div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script>
   var width = 920;
-  var height = 400;
-  var center = { x: width / 2, y: height / 2 };
+  var height = 350;
+  var center = { x: width / 2, y: height / 2 + 30 };
 
   var svg = d3.select('#vis')
     .append('svg')
@@ -65,8 +76,7 @@
 
     var bubbles = svg.selectAll('circle').data(data)
       .enter().append('circle')
-        .attr('r', 5)
-        .attr('stroke', '#000000')
+        .attr('r', 3)
         .attr('stroke-width', 1);
 
     var forceStrength = 0.03;
@@ -74,8 +84,8 @@
     var simulation = d3.forceSimulation().nodes(data)
       .velocityDecay(0.2)
       .force('x', d3.forceX().strength(forceStrength).x(center.x))
-      .force('y', d3.forceY().strength(forceStrength).y(center.y))
-      .force('charge', d3.forceManyBody().strength(function(d){ return -40 * forceStrength }))
+      .force('y', d3.forceY().strength(forceStrength*1.3).y(center.y))
+      .force('charge', d3.forceManyBody().strength(function(d){ return -30 * forceStrength }))
       .on('tick', function(){
         bubbles
           .attr('cx', function(d){return d.x})
@@ -162,7 +172,8 @@
         .text(function(value){ return value; })
         .style('background', function(value){ return(fillColor(value)) });
       bubbles.transition()
-        .attr('fill', function(d){ return fillColor(d[field]); });
+        .attr('fill', function(d){ return fillColor(d[field]); })
+        .attr('stroke', function(d){ return d3.color(fillColor(d[field])).darker().hex(); });
     }
 
     colorBubbles('None');
