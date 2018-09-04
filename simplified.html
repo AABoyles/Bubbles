@@ -10,8 +10,7 @@
     font-family: Helvetica;
   }
   .container {
-    max-width: 920px;
-    margin: auto;
+    position:absolute;
   }
   .title{
     font-size: 20px;
@@ -24,25 +23,27 @@
     text-align: center;
     border: 1px solid #e0e0e0;
     text-decoration: none;
+    background: rgba(255,255,255,0.8);
   }
   .button.active {
     background: #000;
     color: #fff;
   }
-  #vis {
-    width: 920px;
-    height: 400px;
-    clear: both;
-    margin-bottom: 10px;
-  }
   #colors {
-    margin: 5px 0;
-    height: 16px;
-    text-align: right;
+    position:absolute;
+    right: 0;
+    bottom: 44px;
   }
   #group-toolbar, #color-toolbar{
+    position: absolute;
     padding:5px 0;
     font-size: 10px;
+  }
+  #group-toolbar{
+    bottom: 19px;
+  }
+  #color-toolbar{
+    bottom: 0px;
   }
   .mono{
     font-family: monospace;
@@ -51,7 +52,7 @@
 </head>
 <body>
   <div class="container">
-    <div id="vis"></div>
+    <svg></svg>
     <div id="colors"></div>
     <div id="group-toolbar"><span class="mono">Group By:</span></div>
     <div id="color-toolbar"><span class="mono">Color By:</span></div>
@@ -62,10 +63,9 @@
   <script>
   var width = 920;
   var height = 350;
-  var center = { x: width / 2, y: height / 2 + 30 };
+  var center = { x: width / 2, y: height / 2 };
 
-  var svg = d3.select('#vis')
-    .append('svg')
+  var svg = d3.select('svg')
     .attr('width', width)
     .attr('height', height);
 
@@ -118,7 +118,7 @@
       titles.exit().remove();
       titles.enter().append('text')
         .attr('class', 'title')
-        .attr('y', function(d, i){ return i % 2 === 0 ? 25 : 55})
+        .attr('y', function(d, i){ return i % 2 === 0 ? 40 : 20})
         .attr('text-anchor', 'middle')
         .merge(titles)
         .transition()
@@ -158,7 +158,9 @@
 
     function colorBubbles(field){
       if(field === 'None'){
-        bubbles.attr('fill', d3.schemeCategory10[0]);
+        bubbles
+          .attr('fill', d3.schemeCategory10[0])
+          .attr('stroke', '#000000');
         d3.select('#colors').selectAll('a').remove();
         return;
       }
